@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "lexicon_version": "0.14.0",
+  "lexicon_version": "0.14.1",
   "language": "uk-UA",
   "name": "Ukrainian TTS Fixed-Stress Lemmas",
   "description": "Community-maintained list of Ukrainian lemmas whose stress never moves: in every wordform the stress falls on the same syllable. Companion to standard_lexicon.json, which lists individual wordforms (including mobile-stress paradigms and homographs).",
@@ -5415,11 +5415,12 @@
       "lemma": "замість",
       "pos": "ADP",
       "paradigm": "invariable",
-      "status": "seed",
+      "status": "disputed",
       "stressed": {"uppercase": "зАмість", "combining": "за\u0301мість"},
       "stress_char_index": 1,
       "stress_syllable": 1,
-      "syllable_count": 2
+      "syllable_count": 2,
+      "note": "Sources disagree: the ULIF-derived dictionary gives за\u0301мість, Wiktionary gives замі\u0301сть. Not applied until reviewed by a linguist."
     },
     {
       "id": "ukf-0412",
@@ -9012,12 +9013,13 @@
       "pos": "NOUN",
       "lemma_features": {"gender": "Neut"},
       "paradigm": "declinable",
-      "status": "seed",
+      "status": "disputed",
       "stressed": {"uppercase": "побажАння", "combining": "побажа\u0301ння"},
       "stress_char_index": 5,
       "stress_syllable": 3,
       "syllable_count": 4,
-      "sample_forms": [{"uppercase": "побажАнь", "combining": "побажа\u0301нь"}]
+      "sample_forms": [{"uppercase": "побажАнь", "combining": "побажа\u0301нь"}],
+      "note": "Sources disagree: the ULIF-derived dictionary gives побажа\u0301ння, Wiktionary gives поба\u0301жання. Not applied until reviewed by a linguist."
     },
     {
       "id": "ukf-0684",
@@ -15058,13 +15060,13 @@
       "pos": "NOUN",
       "lemma_features": {"gender": "Masc"},
       "paradigm": "declinable",
-      "status": "seed",
+      "status": "disputed",
       "stressed": {"uppercase": "застОсунок", "combining": "засто\u0301сунок"},
       "stress_char_index": 4,
       "stress_syllable": 2,
       "syllable_count": 4,
       "sample_forms": [{"uppercase": "застОсунки", "combining": "засто\u0301сунки"}],
-      "note": "Not covered by the reference dictionary used for cross-checking; stress needs human verification."
+      "note": "Sources disagree: the ULIF-derived dictionary gives засто\u0301сунок, Wiktionary gives застосу\u0301нок. Not applied until reviewed by a linguist."
     },
     {
       "id": "ukf-1146",
@@ -18242,11 +18244,12 @@
       "pos": "NOUN",
       "lemma_features": {"gender": "Neut"},
       "paradigm": "indeclinable",
-      "status": "seed",
+      "status": "disputed",
       "stressed": {"uppercase": "каратЕ", "combining": "карате\u0301"},
       "stress_char_index": 5,
       "stress_syllable": 3,
-      "syllable_count": 3
+      "syllable_count": 3,
+      "note": "Sources disagree: the ULIF-derived dictionary gives карате\u0301, Wiktionary gives кара\u0301те. Not applied until reviewed by a linguist."
     },
     {
       "id": "ukf-1398",
@@ -25132,12 +25135,13 @@
       "lemma": "Ватикан",
       "pos": "PROPN",
       "paradigm": "declinable",
-      "status": "seed",
+      "status": "disputed",
       "stressed": {"uppercase": "ватикАн", "combining": "Ватика\u0301н"},
       "stress_char_index": 5,
       "stress_syllable": 3,
       "syllable_count": 3,
-      "sample_forms": [{"uppercase": "ватикАну", "combining": "Ватика\u0301ну"}]
+      "sample_forms": [{"uppercase": "ватикАну", "combining": "Ватика\u0301ну"}],
+      "note": "Sources disagree: the ULIF-derived dictionary gives Ватика\u0301н, Wiktionary gives Вати\u0301кан. Not applied until reviewed by a linguist."
     },
     {
       "id": "ukf-1925",
@@ -25660,12 +25664,13 @@
       "lemma": "Канберра",
       "pos": "PROPN",
       "paradigm": "declinable",
-      "status": "seed",
+      "status": "disputed",
       "stressed": {"uppercase": "канбЕрра", "combining": "Канбе\u0301рра"},
       "stress_char_index": 4,
       "stress_syllable": 2,
       "syllable_count": 3,
-      "sample_forms": [{"uppercase": "канбЕрри", "combining": "Канбе\u0301рри"}]
+      "sample_forms": [{"uppercase": "канбЕрри", "combining": "Канбе\u0301рри"}],
+      "note": "Sources disagree: the ULIF-derived dictionary gives Канбе\u0301рра, Wiktionary gives Ка\u0301нберра. Not applied until reviewed by a linguist."
     },
     {
       "id": "ukf-1969",
@@ -26927,11 +26932,12 @@
       "pos": "NOUN",
       "lemma_features": {"gender": "Neut"},
       "paradigm": "indeclinable",
-      "status": "seed",
+      "status": "disputed",
       "stressed": {"uppercase": "конфетІ", "combining": "конфеті\u0301"},
       "stress_char_index": 6,
       "stress_syllable": 3,
-      "syllable_count": 3
+      "syllable_count": 3,
+      "note": "Sources disagree: the ULIF-derived dictionary gives конфеті\u0301, Wiktionary gives конфе\u0301ті. Not applied until reviewed by a linguist."
     },
     {
       "id": "ukf-2074",
@@ -30516,11 +30522,12 @@
       "lemma": "ані",
       "pos": "CCONJ",
       "paradigm": "invariable",
-      "status": "seed",
+      "status": "disputed",
       "stressed": {"uppercase": "анІ", "combining": "ані\u0301"},
       "stress_char_index": 2,
       "stress_syllable": 2,
-      "syllable_count": 2
+      "syllable_count": 2,
+      "note": "Sources disagree: the ULIF-derived dictionary gives ані\u0301, Wiktionary gives а\u0301ні. Not applied until reviewed by a linguist."
     },
     {
       "id": "ukf-2356",
@@ -51664,13 +51671,13 @@
       "pos": "NOUN",
       "lemma_features": {"gender": "Masc"},
       "paradigm": "declinable",
-      "status": "seed",
+      "status": "disputed",
       "stressed": {"uppercase": "пОпкорн", "combining": "по\u0301пкорн"},
       "stress_char_index": 1,
       "stress_syllable": 1,
       "syllable_count": 2,
       "sample_forms": [{"uppercase": "пОпкорну", "combining": "по\u0301пкорну"}],
-      "note": "Not covered by the reference dictionary used for cross-checking; stress needs human verification."
+      "note": "Sources disagree: the ULIF-derived dictionary gives по\u0301пкорн, Wiktionary gives попко\u0301рн. Not applied until reviewed by a linguist."
     },
     {
       "id": "ukf-3978",
@@ -62803,12 +62810,13 @@
       "lemma": "прийнятий",
       "pos": "ADJ",
       "paradigm": "adjective",
-      "status": "seed",
+      "status": "disputed",
       "stressed": {"uppercase": "прИйнятий", "combining": "при\u0301йнятий"},
       "stress_char_index": 2,
       "stress_syllable": 1,
       "syllable_count": 3,
-      "lemma_features": {"verb_form": "Part"}
+      "lemma_features": {"verb_form": "Part"},
+      "note": "Sources disagree: the ULIF-derived dictionary gives при\u0301йнятий, Wiktionary gives прийня\u0301тий. Not applied until reviewed by a linguist."
     },
     {
       "id": "ukf-4799",
