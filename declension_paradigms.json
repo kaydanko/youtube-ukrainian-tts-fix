@@ -1,0 +1,1588 @@
+{
+  "schema_version": "1.0.0",
+  "lexicon_version": "0.1.0",
+  "language": "uk-UA",
+  "name": "Ukrainian TTS Declension Stress Paradigms",
+  "description": "Full declension paradigms with stress for Ukrainian pronouns, determiners and numerals (closed classes, often with moving stress: оди\u0301н – одного\u0301, ві\u0301сім – восьми\u0301, той – того\u0301). Every polysyllabic form is listed; one-syllable forms (мій, нас, цим) need no stress mark and are omitted.",
+  "license": "MIT",
+  "updated": "2026-11-07",
+  "verification": "Every form was written by hand and then cross-checked against two independent open sources: the ukrainian-word-stress dictionary (lang-uk, MIT; data derived from ULIF 'Словники України') and the declension tables of the English Wiktionary (via the wiktextract extraction published at kaikki.org; CC BY-SA). A form is included only if at least one source confirms it and no source contradicts it; 'verified_by' lists the sources that confirm it. No data was copied from either source.",
+  "notation": {"uppercase": "Stressed vowel written as the only uppercase letter.", "combining": "U+0301 after the stressed vowel.", "slot": "case (nom gen dat acc ins loc), prefixed with m_/f_/n_/pl_ for gendered forms; the suffix _pr marks the form used after a preposition (від нього\u0301 vs. його\u0301); nom_m / nom_f mark gendered numerals. Accusative and locative forms that coincide with another case are listed under that case only for adjectival words (m_acc = nom or gen, f_loc = f_dat, pl_acc = pl_nom or pl_gen, pl_loc = pl_gen).", "homograph": "true when the same spelling has a different stress in another word (тому\u0301 / то\u0301му from том, сам: само\u0301го / са\u0301мий: са\u0301мого) or in another slot; disambiguate before applying. Variants of the same word (на ко\u0301го, до цьо\u0301го after a preposition; dialectal forms) are not homographs: the listed form is always acceptable and the variant is named in note. Proper names are not counted.", "verified_by": "Which independent sources confirm the stress of this form: 'ulif', 'wiktionary', or 'manual' (orthoepic dictionary entry checked by hand; see note)."},
+  "entries": [
+    {
+      "id": "ukd-0001",
+      "lemma": "я",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Prs", "person": "1"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "мене", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "менЕ", "combining": "мене\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: ме\u0301не (dialectal, dated or after a preposition); мене\u0301 is the standard form."},
+        {"slot": "dat", "form": "мені", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "менІ", "combining": "мені\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "мене", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "менЕ", "combining": "мене\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: ме\u0301не (dialectal, dated or after a preposition); мене\u0301 is the standard form."},
+        {"slot": "ins", "form": "мною", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "мнОю", "combining": "мно\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "мені", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "менІ", "combining": "мені\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0002",
+      "lemma": "ти",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Prs", "person": "2"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "тебе", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "тебЕ", "combining": "тебе\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: те\u0301бе (dialectal, dated or after a preposition); тебе\u0301 is the standard form."},
+        {"slot": "dat", "form": "тобі", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "тобІ", "combining": "тобі\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "тебе", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "тебЕ", "combining": "тебе\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: те\u0301бе (dialectal, dated or after a preposition); тебе\u0301 is the standard form."},
+        {"slot": "ins", "form": "тобою", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "тобОю", "combining": "тобо\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "тобі", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "тобІ", "combining": "тобі\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0003",
+      "lemma": "він",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Prs", "person": "3", "gender": "Masc"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "його", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "йогО", "combining": "його\u0301"}, "homograph": false, "verified_by": ["wiktionary"], "note": "The reference dictionary has only an untagged йо\u0301го for this spelling; the normative pronoun form is його\u0301 (Wiktionary; orthoepic dictionaries)."},
+        {"slot": "gen_pr", "form": "нього", "grammemes": {"case": "Gen", "prep_case": "Pre"}, "stressed": {"uppercase": "ньОго", "combining": "ньо\u0301го"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "dat", "form": "йому", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "йомУ", "combining": "йому\u0301"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "acc", "form": "його", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "йогО", "combining": "його\u0301"}, "homograph": false, "verified_by": ["wiktionary"], "note": "The reference dictionary has only an untagged йо\u0301го for this spelling; the normative pronoun form is його\u0301 (Wiktionary; orthoepic dictionaries)."},
+        {"slot": "acc_pr", "form": "нього", "grammemes": {"case": "Acc", "prep_case": "Pre"}, "stressed": {"uppercase": "ньОго", "combining": "ньо\u0301го"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "loc_pr", "form": "ньому", "grammemes": {"case": "Loc", "prep_case": "Pre"}, "stressed": {"uppercase": "ньОму", "combining": "ньо\u0301му"}, "homograph": false, "verified_by": ["wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0004",
+      "lemma": "вона",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Prs", "person": "3", "gender": "Fem"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "вона", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "вонА", "combining": "вона\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "її", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "їЇ", "combining": "її\u0301"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "gen_pr", "form": "неї", "grammemes": {"case": "Gen", "prep_case": "Pre"}, "stressed": {"uppercase": "нЕї", "combining": "не\u0301ї"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "acc", "form": "її", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "їЇ", "combining": "її\u0301"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "acc_pr", "form": "неї", "grammemes": {"case": "Acc", "prep_case": "Pre"}, "stressed": {"uppercase": "нЕї", "combining": "не\u0301ї"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "ins", "form": "нею", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "нЕю", "combining": "не\u0301ю"}, "homograph": false, "verified_by": ["wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0005",
+      "lemma": "воно",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Prs", "person": "3", "gender": "Neut"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "воно", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "вонО", "combining": "воно\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "його", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "йогО", "combining": "його\u0301"}, "homograph": false, "verified_by": ["wiktionary"], "note": "The reference dictionary has only an untagged йо\u0301го for this spelling; the normative pronoun form is його\u0301 (Wiktionary; orthoepic dictionaries)."},
+        {"slot": "gen_pr", "form": "нього", "grammemes": {"case": "Gen", "prep_case": "Pre"}, "stressed": {"uppercase": "ньОго", "combining": "ньо\u0301го"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "dat", "form": "йому", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "йомУ", "combining": "йому\u0301"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "acc", "form": "його", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "йогО", "combining": "його\u0301"}, "homograph": false, "verified_by": ["wiktionary"], "note": "The reference dictionary has only an untagged йо\u0301го for this spelling; the normative pronoun form is його\u0301 (Wiktionary; orthoepic dictionaries)."},
+        {"slot": "acc_pr", "form": "нього", "grammemes": {"case": "Acc", "prep_case": "Pre"}, "stressed": {"uppercase": "ньОго", "combining": "ньо\u0301го"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "loc_pr", "form": "ньому", "grammemes": {"case": "Loc", "prep_case": "Pre"}, "stressed": {"uppercase": "ньОму", "combining": "ньо\u0301му"}, "homograph": false, "verified_by": ["wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0006",
+      "lemma": "ми",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Prs", "person": "1", "number": "Plur"},
+      "status": "seed",
+      "forms": [
+        {"slot": "ins", "form": "нами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "нАми", "combining": "на\u0301ми"}, "homograph": false, "verified_by": ["wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0007",
+      "lemma": "ви",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Prs", "person": "2", "number": "Plur"},
+      "status": "seed",
+      "forms": [
+        {"slot": "ins", "form": "вами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "вАми", "combining": "ва\u0301ми"}, "homograph": false, "verified_by": ["wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0008",
+      "lemma": "вони",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Prs", "person": "3", "number": "Plur"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "вони", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "вонИ", "combining": "вони\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "ними", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "нИми", "combining": "ни\u0301ми"}, "homograph": false, "verified_by": ["wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0009",
+      "lemma": "себе",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Prs", "reflex": "Yes"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "себе", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "себЕ", "combining": "себе\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: се\u0301бе (dialectal, dated or after a preposition); себе\u0301 is the standard form."},
+        {"slot": "dat", "form": "собі", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "собІ", "combining": "собі\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: со\u0301бі (dialectal, dated or after a preposition); собі\u0301 is the standard form."},
+        {"slot": "acc", "form": "себе", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "себЕ", "combining": "себе\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: се\u0301бе (dialectal, dated or after a preposition); себе\u0301 is the standard form."},
+        {"slot": "ins", "form": "собою", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "собОю", "combining": "собо\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "собі", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "собІ", "combining": "собі\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: со\u0301бі (dialectal, dated or after a preposition); собі\u0301 is the standard form."}
+      ]
+    },
+    {
+      "id": "ukd-0010",
+      "lemma": "хто",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Int,Rel"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "кого", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "когО", "combining": "кого\u0301"}, "homograph": false, "verified_by": ["wiktionary"], "note": "Also attested for the same word: ко\u0301го (dialectal, dated or after a preposition); кого\u0301 is the standard form."},
+        {"slot": "dat", "form": "кому", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "комУ", "combining": "кому\u0301"}, "homograph": true, "verified_by": ["wiktionary"], "note": "Dative кому\u0301; the reference dictionary lists only the locative reading (на) ко\u0301му."},
+        {"slot": "acc", "form": "кого", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "когО", "combining": "кого\u0301"}, "homograph": false, "verified_by": ["wiktionary"], "note": "Also attested for the same word: ко\u0301го (dialectal, dated or after a preposition); кого\u0301 is the standard form."}
+      ]
+    },
+    {
+      "id": "ukd-0011",
+      "lemma": "що",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Int,Rel"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "чого", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "чогО", "combining": "чого\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: чо\u0301го (dialectal, dated or after a preposition); чого\u0301 is the standard form."},
+        {"slot": "dat", "form": "чому", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "чомУ", "combining": "чому\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: чо\u0301му (dialectal, dated or after a preposition); чому\u0301 is the standard form."}
+      ]
+    },
+    {
+      "id": "ukd-0012",
+      "lemma": "ніхто",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Neg"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "ніхто", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "ніхтО", "combining": "ніхто\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "нікого", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "нікОго", "combining": "ніко\u0301го"}, "homograph": true, "verified_by": ["wiktionary"], "note": "Pronoun ніко\u0301го; the reference dictionary lists only the predicative ні\u0301кого ('there is nobody to ...')."},
+        {"slot": "dat", "form": "нікому", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "нікОму", "combining": "ніко\u0301му"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "нікого", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "нікОго", "combining": "ніко\u0301го"}, "homograph": true, "verified_by": ["wiktionary"], "note": "Pronoun ніко\u0301го; the reference dictionary lists only the predicative ні\u0301кого ('there is nobody to ...')."},
+        {"slot": "ins", "form": "ніким", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "нікИм", "combining": "ніки\u0301м"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0013",
+      "lemma": "ніщо",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Neg"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "ніщо", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "ніщО", "combining": "ніщо\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "нічого", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "нічОго", "combining": "нічо\u0301го"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "нічому", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "нічОму", "combining": "нічо\u0301му"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "acc", "form": "ніщо", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "ніщО", "combining": "ніщо\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "нічим", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "нічИм", "combining": "нічи\u0301м"}, "homograph": true, "verified_by": ["wiktionary"], "note": "Pronoun нічи\u0301м; the reference dictionary lists only the predicative ні\u0301чим ('there is nothing to ...')."}
+      ]
+    },
+    {
+      "id": "ukd-0014",
+      "lemma": "хтось",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Ind"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "когось", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "когОсь", "combining": "кого\u0301сь"}, "homograph": false, "verified_by": ["wiktionary"], "note": "Also attested for the same word: ко\u0301гось (dialectal, dated or after a preposition); кого\u0301сь is the standard form."},
+        {"slot": "dat", "form": "комусь", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "комУсь", "combining": "кому\u0301сь"}, "homograph": false, "verified_by": ["wiktionary"], "note": "Also attested for the same word: ко\u0301мусь (dialectal, dated or after a preposition); кому\u0301сь is the standard form."},
+        {"slot": "acc", "form": "когось", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "когОсь", "combining": "кого\u0301сь"}, "homograph": false, "verified_by": ["wiktionary"], "note": "Also attested for the same word: ко\u0301гось (dialectal, dated or after a preposition); кого\u0301сь is the standard form."},
+        {"slot": "ins", "form": "кимось", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "кИмось", "combining": "ки\u0301мось"}, "homograph": false, "verified_by": ["wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0015",
+      "lemma": "щось",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Ind"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "чогось", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "чогОсь", "combining": "чого\u0301сь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: чо\u0301гось (dialectal, dated or after a preposition); чого\u0301сь is the standard form."},
+        {"slot": "dat", "form": "чомусь", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "чомУсь", "combining": "чому\u0301сь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: чо\u0301мусь (dialectal, dated or after a preposition); чому\u0301сь is the standard form."},
+        {"slot": "ins", "form": "чимось", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "чИмось", "combining": "чи\u0301мось"}, "homograph": false, "verified_by": ["wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0016",
+      "lemma": "дехто",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Ind"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "дехто", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дЕхто", "combining": "де\u0301хто"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "декого", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дЕкого", "combining": "де\u0301кого"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "dat", "form": "декому", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дЕкому", "combining": "де\u0301кому"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "acc", "form": "декого", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "дЕкого", "combining": "де\u0301кого"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "ins", "form": "деким", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дЕким", "combining": "де\u0301ким"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "loc", "form": "декому", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дЕкому", "combining": "де\u0301кому"}, "homograph": false, "verified_by": ["wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0017",
+      "lemma": "дещо",
+      "pos": "PRON",
+      "lemma_features": {"pron_type": "Ind"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "дещо", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дЕщо", "combining": "де\u0301що"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "дечого", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дЕчого", "combining": "де\u0301чого"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "dat", "form": "дечому", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дЕчому", "combining": "де\u0301чому"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "acc", "form": "дещо", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "дЕщо", "combining": "де\u0301що"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "дечим", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дЕчим", "combining": "де\u0301чим"}, "homograph": false, "verified_by": ["wiktionary"]},
+        {"slot": "loc", "form": "дечому", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дЕчому", "combining": "де\u0301чому"}, "homograph": false, "verified_by": ["wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0018",
+      "lemma": "мій",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Prs", "poss": "Yes"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_gen", "form": "мого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "могО", "combining": "мого\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "моєму", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "моЄму", "combining": "моє\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "моїм", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "моЇм", "combining": "мої\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "моєму", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "моЄму", "combining": "моє\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "моїм", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "моЇм", "combining": "мої\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "моя", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "моЯ", "combining": "моя\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "моєї", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "моЄї", "combining": "моє\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "моїй", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "моЇй", "combining": "мої\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "мою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "моЮ", "combining": "мою\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "моєю", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "моЄю", "combining": "моє\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "моє", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "моЄ", "combining": "моє\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "мої", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "моЇ", "combining": "мої\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "моїх", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "моЇх", "combining": "мої\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "моїм", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "моЇм", "combining": "мої\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "моїми", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "моЇми", "combining": "мої\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0019",
+      "lemma": "твій",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Prs", "poss": "Yes"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_gen", "form": "твого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "твогО", "combining": "твого\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "твоєму", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "твоЄму", "combining": "твоє\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "твоїм", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "твоЇм", "combining": "твої\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "твоєму", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "твоЄму", "combining": "твоє\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "твоїм", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "твоЇм", "combining": "твої\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "твоя", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "твоЯ", "combining": "твоя\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "твоєї", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "твоЄї", "combining": "твоє\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "твоїй", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "твоЇй", "combining": "твої\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "твою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "твоЮ", "combining": "твою\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "твоєю", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "твоЄю", "combining": "твоє\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "твоє", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "твоЄ", "combining": "твоє\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "твої", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "твоЇ", "combining": "твої\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "твоїх", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "твоЇх", "combining": "твої\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "твоїм", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "твоЇм", "combining": "твої\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "твоїми", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "твоЇми", "combining": "твої\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0020",
+      "lemma": "свій",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Prs", "poss": "Yes", "reflex": "Yes"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_gen", "form": "свого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "свогО", "combining": "свого\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "своєму", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "своЄму", "combining": "своє\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "своїм", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "своЇм", "combining": "свої\u0301м"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "своєму", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "своЄму", "combining": "своє\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "своїм", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "своЇм", "combining": "свої\u0301м"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "своя", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "своЯ", "combining": "своя\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "своєї", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "своЄї", "combining": "своє\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "своїй", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "своЇй", "combining": "свої\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "свою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "своЮ", "combining": "свою\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "своєю", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "своЄю", "combining": "своє\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "своє", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "своЄ", "combining": "своє\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "свої", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "своЇ", "combining": "свої\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "своїх", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "своЇх", "combining": "свої\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "своїм", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "своЇм", "combining": "свої\u0301м"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "своїми", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "своЇми", "combining": "свої\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0021",
+      "lemma": "наш",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Prs", "poss": "Yes"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_gen", "form": "нашого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "нАшого", "combining": "на\u0301шого"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "нашому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "нАшому", "combining": "на\u0301шому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "нашим", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "нАшим", "combining": "на\u0301шим"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "нашому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "нАшому", "combining": "на\u0301шому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "нашім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "нАшім", "combining": "на\u0301шім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "наша", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "нАша", "combining": "на\u0301ша"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "нашої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "нАшої", "combining": "на\u0301шої"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "нашій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "нАшій", "combining": "на\u0301шій"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "нашу", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "нАшу", "combining": "на\u0301шу"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "нашою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "нАшою", "combining": "на\u0301шою"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "наше", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "нАше", "combining": "на\u0301ше"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "наші", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "нАші", "combining": "на\u0301ші"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "наших", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "нАших", "combining": "на\u0301ших"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "нашим", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "нАшим", "combining": "на\u0301шим"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "нашими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "нАшими", "combining": "на\u0301шими"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0022",
+      "lemma": "ваш",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Prs", "poss": "Yes"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_gen", "form": "вашого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "вАшого", "combining": "ва\u0301шого"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "вашому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "вАшому", "combining": "ва\u0301шому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "вашим", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "вАшим", "combining": "ва\u0301шим"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "вашому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "вАшому", "combining": "ва\u0301шому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "вашім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "вАшім", "combining": "ва\u0301шім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "ваша", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "вАша", "combining": "ва\u0301ша"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "вашої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "вАшої", "combining": "ва\u0301шої"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "вашій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "вАшій", "combining": "ва\u0301шій"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "вашу", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "вАшу", "combining": "ва\u0301шу"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "вашою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "вАшою", "combining": "ва\u0301шою"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "ваше", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "вАше", "combining": "ва\u0301ше"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "ваші", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "вАші", "combining": "ва\u0301ші"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "ваших", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "вАших", "combining": "ва\u0301ших"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "вашим", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "вАшим", "combining": "ва\u0301шим"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "вашими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "вАшими", "combining": "ва\u0301шими"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0023",
+      "lemma": "їхній",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Prs", "poss": "Yes"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "їхній", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "Їхній", "combining": "ї\u0301хній"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "їхнього", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "Їхнього", "combining": "ї\u0301хнього"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "їхньому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "Їхньому", "combining": "ї\u0301хньому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "їхнім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "Їхнім", "combining": "ї\u0301хнім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "їхньому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "Їхньому", "combining": "ї\u0301хньому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "їхнім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "Їхнім", "combining": "ї\u0301хнім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "їхня", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "Їхня", "combining": "ї\u0301хня"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "їхньої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "Їхньої", "combining": "ї\u0301хньої"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "їхній", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "Їхній", "combining": "ї\u0301хній"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "їхню", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "Їхню", "combining": "ї\u0301хню"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "їхньою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "Їхньою", "combining": "ї\u0301хньою"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "їхнє", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "Їхнє", "combining": "ї\u0301хнє"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "їхні", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "Їхні", "combining": "ї\u0301хні"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "їхніх", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "Їхніх", "combining": "ї\u0301хніх"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "їхнім", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "Їхнім", "combining": "ї\u0301хнім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "їхніми", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "Їхніми", "combining": "ї\u0301хніми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0024",
+      "lemma": "чий",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Int,Rel", "poss": "Yes"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_gen", "form": "чийого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "чийОго", "combining": "чийо\u0301го"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "чийому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "чийОму", "combining": "чийо\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "чиїм", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "чиЇм", "combining": "чиї\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "чийому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "чийОму", "combining": "чийо\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "чиїм", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "чиЇм", "combining": "чиї\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "чия", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "чиЯ", "combining": "чия\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "чиєї", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "чиЄї", "combining": "чиє\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "чиїй", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "чиЇй", "combining": "чиї\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "чию", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "чиЮ", "combining": "чию\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "чиєю", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "чиЄю", "combining": "чиє\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "чиє", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "чиЄ", "combining": "чиє\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "чиї", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "чиЇ", "combining": "чиї\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "чиїх", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "чиЇх", "combining": "чиї\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "чиїм", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "чиЇм", "combining": "чиї\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "чиїми", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "чиЇми", "combining": "чиї\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0025",
+      "lemma": "нічий",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Neg", "poss": "Yes"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "нічий", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "нічИй", "combining": "нічи\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "нічийого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "нічийОго", "combining": "нічийо\u0301го"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "нічийому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "нічийОму", "combining": "нічийо\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "нічиїм", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "нічиЇм", "combining": "нічиї\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "нічийому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "нічийОму", "combining": "нічийо\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "нічиїм", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "нічиЇм", "combining": "нічиї\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "нічиєї", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "нічиЄї", "combining": "нічиє\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "нічиїй", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "нічиЇй", "combining": "нічиї\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "нічию", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "нічиЮ", "combining": "нічию\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "нічиєю", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "нічиЄю", "combining": "нічиє\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "нічиє", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "нічиЄ", "combining": "нічиє\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "нічиї", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "нічиЇ", "combining": "нічиї\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "нічиїх", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "нічиЇх", "combining": "нічиї\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "нічиїм", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "нічиЇм", "combining": "нічиї\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "нічиїми", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "нічиЇми", "combining": "нічиї\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0026",
+      "lemma": "цей",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Dem"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_gen", "form": "цього", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "цьогО", "combining": "цього\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: цьо\u0301го (dialectal, dated or after a preposition); цього\u0301 is the standard form."},
+        {"slot": "m_dat", "form": "цьому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "цьомУ", "combining": "цьому\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: цьо\u0301му (dialectal, dated or after a preposition); цьому\u0301 is the standard form."},
+        {"slot": "f_gen", "form": "цієї", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "ціЄї", "combining": "ціє\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "цією", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "ціЄю", "combining": "ціє\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "цими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "цИми", "combining": "ци\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0027",
+      "lemma": "той",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Dem"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_gen", "form": "того", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "тогО", "combining": "того\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: то\u0301го (dialectal, dated or after a preposition); того\u0301 is the standard form."},
+        {"slot": "m_dat", "form": "тому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "томУ", "combining": "тому\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "тієї", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "тіЄї", "combining": "тіє\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "тої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "тОї", "combining": "то\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "тією", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "тіЄю", "combining": "тіє\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "тою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "тОю", "combining": "то\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "тими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "тИми", "combining": "ти\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0028",
+      "lemma": "весь",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Tot"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "увесь", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "увЕсь", "combining": "уве\u0301сь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "всього", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "всьогО", "combining": "всього\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: всьо\u0301го (dialectal, dated or after a preposition); всього\u0301 is the standard form."},
+        {"slot": "m_gen", "form": "усього", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "усьогО", "combining": "усього\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: усьо\u0301го (dialectal, dated or after a preposition); усього\u0301 is the standard form."},
+        {"slot": "m_dat", "form": "всьому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "всьомУ", "combining": "всьому\u0301"}, "homograph": false, "verified_by": ["wiktionary"], "note": "Dative всьому\u0301 (Wiktionary); the reference dictionary lists only the locative reading (у) всьо\u0301му. Also attested for the same word: всьо\u0301му (dialectal, dated or after a preposition); всьому\u0301 is the standard form."},
+        {"slot": "m_dat", "form": "усьому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "усьомУ", "combining": "усьому\u0301"}, "homograph": false, "verified_by": ["wiktionary"], "note": "Dative усьому\u0301 (Wiktionary); the reference dictionary lists only the locative reading (в) усьо\u0301му. Also attested for the same word: усьо\u0301му (dialectal, dated or after a preposition); усьому\u0301 is the standard form."},
+        {"slot": "m_ins", "form": "усім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "усІм", "combining": "усі\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "усім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "усІм", "combining": "усі\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "уся", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "усЯ", "combining": "уся\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "всієї", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "всіЄї", "combining": "всіє\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "усієї", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "усіЄї", "combining": "усіє\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "усій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "усІй", "combining": "усі\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "усю", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "усЮ", "combining": "усю\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "всією", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "всіЄю", "combining": "всіє\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "усією", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "усіЄю", "combining": "усіє\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "усе", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "усЕ", "combining": "усе\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "усі", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "усІ", "combining": "усі\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "усіх", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "усІх", "combining": "усі\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "усім", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "усІм", "combining": "усі\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "всіма", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "всімА", "combining": "всіма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "усіма", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "усімА", "combining": "усіма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0029",
+      "lemma": "сам",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Emp"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_gen", "form": "самого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "самОго", "combining": "само\u0301го"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "самому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "самОму", "combining": "само\u0301му"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "самим", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "самИм", "combining": "сами\u0301м"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "самому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "самОму", "combining": "само\u0301му"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "самім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "самІм", "combining": "самі\u0301м"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "сама", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "самА", "combining": "сама\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "самої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "самОї", "combining": "само\u0301ї"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "самій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "самІй", "combining": "самі\u0301й"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "саму", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "самУ", "combining": "саму\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "самою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "самОю", "combining": "само\u0301ю"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "само", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "самО", "combining": "само\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "самі", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "самІ", "combining": "самі\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "самих", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "самИх", "combining": "сами\u0301х"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "самим", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "самИм", "combining": "сами\u0301м"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "самими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "самИми", "combining": "сами\u0301ми"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0030",
+      "lemma": "такий",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Dem"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "такий", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "такИй", "combining": "таки\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "такого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "такОго", "combining": "тако\u0301го"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "такому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "такОму", "combining": "тако\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "таким", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "такИм", "combining": "таки\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "такому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "такОму", "combining": "тако\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "такім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "такІм", "combining": "такі\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "така", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "такА", "combining": "така\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "такої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "такОї", "combining": "тако\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "такій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "такІй", "combining": "такі\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "таку", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "такУ", "combining": "таку\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "такою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "такОю", "combining": "тако\u0301ю"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "таке", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "такЕ", "combining": "таке\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "такі", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "такІ", "combining": "такі\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "таких", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "такИх", "combining": "таки\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "таким", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "такИм", "combining": "таки\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "такими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "такИми", "combining": "таки\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0031",
+      "lemma": "який",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Int,Rel"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "який", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "якИй", "combining": "яки\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "якого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "якОго", "combining": "яко\u0301го"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "якому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "якОму", "combining": "яко\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "яким", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "якИм", "combining": "яки\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "якому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "якОму", "combining": "яко\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "якім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "якІм", "combining": "які\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "яка", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "якА", "combining": "яка\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "якої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "якОї", "combining": "яко\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "якій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "якІй", "combining": "які\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "яку", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "якУ", "combining": "яку\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "якою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "якОю", "combining": "яко\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "яке", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "якЕ", "combining": "яке\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "які", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "якІ", "combining": "які\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "яких", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "якИх", "combining": "яки\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "яким", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "якИм", "combining": "яки\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "якими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "якИми", "combining": "яки\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0032",
+      "lemma": "котрий",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Int,Rel"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "котрий", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "котрИй", "combining": "котри\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "котрого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "котрОго", "combining": "котро\u0301го"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "котрому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "котрОму", "combining": "котро\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "котрим", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "котрИм", "combining": "котри\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "котрому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "котрОму", "combining": "котро\u0301му"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "котрім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "котрІм", "combining": "котрі\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "котра", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "котрА", "combining": "котра\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "котрої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "котрОї", "combining": "котро\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "котрій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "котрІй", "combining": "котрі\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "котру", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "котрУ", "combining": "котру\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "котрою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "котрОю", "combining": "котро\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "котре", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "котрЕ", "combining": "котре\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "котрі", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "котрІ", "combining": "котрі\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "котрих", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "котрИх", "combining": "котри\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "котрим", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "котрИм", "combining": "котри\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "котрими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "котрИми", "combining": "котри\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0033",
+      "lemma": "кожен",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Tot"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "кожен", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "кОжен", "combining": "ко\u0301жен"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_nom", "form": "кожний", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "кОжний", "combining": "ко\u0301жний"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "кожного", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "кОжного", "combining": "ко\u0301жного"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "кожному", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "кОжному", "combining": "ко\u0301жному"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "кожним", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "кОжним", "combining": "ко\u0301жним"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "кожному", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "кОжному", "combining": "ко\u0301жному"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "кожнім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "кОжнім", "combining": "ко\u0301жнім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "кожна", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "кОжна", "combining": "ко\u0301жна"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "кожної", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "кОжної", "combining": "ко\u0301жної"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "кожній", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "кОжній", "combining": "ко\u0301жній"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "кожну", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "кОжну", "combining": "ко\u0301жну"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "кожною", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "кОжною", "combining": "ко\u0301жною"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "кожне", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "кОжне", "combining": "ко\u0301жне"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "кожні", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "кОжні", "combining": "ко\u0301жні"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "кожних", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "кОжних", "combining": "ко\u0301жних"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "кожним", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "кОжним", "combining": "ко\u0301жним"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "кожними", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "кОжними", "combining": "ко\u0301жними"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0034",
+      "lemma": "жоден",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Neg"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "жоден", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "жОден", "combining": "жо\u0301ден"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_nom", "form": "жодний", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "жОдний", "combining": "жо\u0301дний"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "жодного", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "жОдного", "combining": "жо\u0301дного"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "жодному", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "жОдному", "combining": "жо\u0301дному"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "жодним", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "жОдним", "combining": "жо\u0301дним"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "жодному", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "жОдному", "combining": "жо\u0301дному"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "жоднім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "жОднім", "combining": "жо\u0301днім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "жодна", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "жОдна", "combining": "жо\u0301дна"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "жодної", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "жОдної", "combining": "жо\u0301дної"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "жодній", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "жОдній", "combining": "жо\u0301дній"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "жодну", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "жОдну", "combining": "жо\u0301дну"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "жодною", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "жОдною", "combining": "жо\u0301дною"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "жодне", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "жОдне", "combining": "жо\u0301дне"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "жодні", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "жОдні", "combining": "жо\u0301дні"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "жодних", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "жОдних", "combining": "жо\u0301дних"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "жодним", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "жОдним", "combining": "жо\u0301дним"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "жодними", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "жОдними", "combining": "жо\u0301дними"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0035",
+      "lemma": "деякий",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Ind"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "деякий", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "дЕякий", "combining": "де\u0301який"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "деякого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "дЕякого", "combining": "де\u0301якого"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "деякому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "дЕякому", "combining": "де\u0301якому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "деяким", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "дЕяким", "combining": "де\u0301яким"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "деякому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "дЕякому", "combining": "де\u0301якому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "деякім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "дЕякім", "combining": "де\u0301якім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "деяка", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "дЕяка", "combining": "де\u0301яка"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "деякої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "дЕякої", "combining": "де\u0301якої"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "деякій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "дЕякій", "combining": "де\u0301якій"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "деяку", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "дЕяку", "combining": "де\u0301яку"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "деякою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "дЕякою", "combining": "де\u0301якою"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "деяке", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "дЕяке", "combining": "де\u0301яке"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "деякі", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "дЕякі", "combining": "де\u0301які"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "деяких", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "дЕяких", "combining": "де\u0301яких"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "деяким", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "дЕяким", "combining": "де\u0301яким"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "деякими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "дЕякими", "combining": "де\u0301якими"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0036",
+      "lemma": "всякий",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Tot"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "всякий", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "всЯкий", "combining": "вся\u0301кий"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "всякого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "всЯкого", "combining": "вся\u0301кого"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "всякому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "всЯкому", "combining": "вся\u0301кому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "всяким", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "всЯким", "combining": "вся\u0301ким"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "всякому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "всЯкому", "combining": "вся\u0301кому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "всякім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "всЯкім", "combining": "вся\u0301кім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "всяка", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "всЯка", "combining": "вся\u0301ка"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "всякої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "всЯкої", "combining": "вся\u0301кої"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "всякій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "всЯкій", "combining": "вся\u0301кій"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "всяку", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "всЯку", "combining": "вся\u0301ку"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "всякою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "всЯкою", "combining": "вся\u0301кою"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "всяке", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "всЯке", "combining": "вся\u0301ке"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "всякі", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "всЯкі", "combining": "вся\u0301кі"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "всяких", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "всЯких", "combining": "вся\u0301ких"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "всяким", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "всЯким", "combining": "вся\u0301ким"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "всякими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "всЯкими", "combining": "вся\u0301кими"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0037",
+      "lemma": "усякий",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Tot"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "усякий", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "усЯкий", "combining": "уся\u0301кий"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "усякого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "усЯкого", "combining": "уся\u0301кого"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "m_dat", "form": "усякому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "усЯкому", "combining": "уся\u0301кому"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "m_ins", "form": "усяким", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "усЯким", "combining": "уся\u0301ким"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "m_loc", "form": "усякому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "усЯкому", "combining": "уся\u0301кому"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "m_loc", "form": "усякім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "усЯкім", "combining": "уся\u0301кім"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_nom", "form": "усяка", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "усЯка", "combining": "уся\u0301ка"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_gen", "form": "усякої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "усЯкої", "combining": "уся\u0301кої"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_dat", "form": "усякій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "усЯкій", "combining": "уся\u0301кій"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_acc", "form": "усяку", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "усЯку", "combining": "уся\u0301ку"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_ins", "form": "усякою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "усЯкою", "combining": "уся\u0301кою"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "n_nom", "form": "усяке", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "усЯке", "combining": "уся\u0301ке"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "pl_nom", "form": "усякі", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "усЯкі", "combining": "уся\u0301кі"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "pl_gen", "form": "усяких", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "усЯких", "combining": "уся\u0301ких"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "pl_dat", "form": "усяким", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "усЯким", "combining": "уся\u0301ким"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "pl_ins", "form": "усякими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "усЯкими", "combining": "уся\u0301кими"}, "homograph": false, "verified_by": ["ulif"]}
+      ]
+    },
+    {
+      "id": "ukd-0038",
+      "lemma": "ніякий",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Neg"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "ніякий", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "ніЯкий", "combining": "нія\u0301кий"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "ніякого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "ніЯкого", "combining": "нія\u0301кого"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "ніякому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "ніЯкому", "combining": "нія\u0301кому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "ніяким", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "ніЯким", "combining": "нія\u0301ким"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "ніякому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "ніЯкому", "combining": "нія\u0301кому"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "ніякім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "ніЯкім", "combining": "нія\u0301кім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "ніяка", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "ніЯка", "combining": "нія\u0301ка"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "ніякої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "ніЯкої", "combining": "нія\u0301кої"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "ніякій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "ніЯкій", "combining": "нія\u0301кій"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "ніяку", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "ніЯку", "combining": "нія\u0301ку"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "ніякою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "ніЯкою", "combining": "нія\u0301кою"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "ніяке", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "ніЯке", "combining": "нія\u0301ке"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "ніякі", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "ніЯкі", "combining": "нія\u0301кі"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "ніяких", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "ніЯких", "combining": "нія\u0301ких"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "ніяким", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "ніЯким", "combining": "нія\u0301ким"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "ніякими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "ніЯкими", "combining": "нія\u0301кими"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0039",
+      "lemma": "абиякий",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Ind"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "абиякий", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "абИякий", "combining": "аби\u0301який"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "m_gen", "form": "абиякого", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "абИякого", "combining": "аби\u0301якого"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "m_dat", "form": "абиякому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "абИякому", "combining": "аби\u0301якому"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "m_ins", "form": "абияким", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "абИяким", "combining": "аби\u0301яким"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "m_loc", "form": "абиякому", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "абИякому", "combining": "аби\u0301якому"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "m_loc", "form": "абиякім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "абИякім", "combining": "аби\u0301якім"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_nom", "form": "абияка", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "абИяка", "combining": "аби\u0301яка"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_gen", "form": "абиякої", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "абИякої", "combining": "аби\u0301якої"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_dat", "form": "абиякій", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "абИякій", "combining": "аби\u0301якій"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_acc", "form": "абияку", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "абИяку", "combining": "аби\u0301яку"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_ins", "form": "абиякою", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "абИякою", "combining": "аби\u0301якою"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "n_nom", "form": "абияке", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "абИяке", "combining": "аби\u0301яке"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "pl_nom", "form": "абиякі", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "абИякі", "combining": "аби\u0301які"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "pl_gen", "form": "абияких", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "абИяких", "combining": "аби\u0301яких"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "pl_dat", "form": "абияким", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "абИяким", "combining": "аби\u0301яким"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "pl_ins", "form": "абиякими", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "абИякими", "combining": "аби\u0301якими"}, "homograph": false, "verified_by": ["ulif"]}
+      ]
+    },
+    {
+      "id": "ukd-0040",
+      "lemma": "якийсь",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Ind"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "якийсь", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "якИйсь", "combining": "яки\u0301йсь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "якогось", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "якОгось", "combining": "яко\u0301гось"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "якомусь", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "якОмусь", "combining": "яко\u0301мусь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_ins", "form": "якимсь", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "якИмсь", "combining": "яки\u0301мсь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "якомусь", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "якОмусь", "combining": "яко\u0301мусь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "якась", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "якАсь", "combining": "яка\u0301сь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "якоїсь", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "якОїсь", "combining": "яко\u0301їсь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "якійсь", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "якІйсь", "combining": "які\u0301йсь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "якусь", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "якУсь", "combining": "яку\u0301сь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "якоюсь", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "якОюсь", "combining": "яко\u0301юсь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "якесь", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "якЕсь", "combining": "яке\u0301сь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "якісь", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "якІсь", "combining": "які\u0301сь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "якимсь", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "якИмсь", "combining": "яки\u0301мсь"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "якимись", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "якИмись", "combining": "яки\u0301мись"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0041",
+      "lemma": "скільки",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Int,Rel", "num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "скільки", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "скІльки", "combining": "скі\u0301льки"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "скількох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "скількОх", "combining": "скілько\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "скільком", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "скількОм", "combining": "скілько\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "скількома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "скількомА", "combining": "скількома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "скількох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "скількОх", "combining": "скілько\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0042",
+      "lemma": "стільки",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Dem", "num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "стільки", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "стІльки", "combining": "сті\u0301льки"}, "homograph": false, "verified_by": ["ulif"]}
+      ]
+    },
+    {
+      "id": "ukd-0043",
+      "lemma": "кілька",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Ind", "num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "кілька", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "кІлька", "combining": "кі\u0301лька"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "кількох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "кількОх", "combining": "кілько\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "кільком", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "кількОм", "combining": "кілько\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "кількома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "кількомА", "combining": "кількома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "кількох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "кількОх", "combining": "кілько\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0044",
+      "lemma": "декілька",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Ind", "num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "декілька", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дЕкілька", "combining": "де\u0301кілька"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "декількох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дЕкількох", "combining": "де\u0301кількох"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "декільком", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дЕкільком", "combining": "де\u0301кільком"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "декількома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дЕкількома", "combining": "де\u0301кількома"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "декількох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дЕкількох", "combining": "де\u0301кількох"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0045",
+      "lemma": "багато",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Ind", "num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "багато", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "багАто", "combining": "бага\u0301то"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "багатьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "багатьОх", "combining": "багатьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "багатьом", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "багатьОм", "combining": "багатьо\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "багатьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "багатьмА", "combining": "багатьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "багатьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "багатьОх", "combining": "багатьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0046",
+      "lemma": "один",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "один", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "одИн", "combining": "оди\u0301н"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_gen", "form": "одного", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "одногО", "combining": "одного\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_dat", "form": "одному", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "одномУ", "combining": "одному\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: одно\u0301му (dialectal, dated or after a preposition); одному\u0301 is the standard form."},
+        {"slot": "m_ins", "form": "одним", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "однИм", "combining": "одни\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "m_loc", "form": "одному", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "одномУ", "combining": "одному\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: одно\u0301му (dialectal, dated or after a preposition); одному\u0301 is the standard form."},
+        {"slot": "m_loc", "form": "однім", "grammemes": {"gender": "Masc", "number": "Sing", "case": "Loc"}, "stressed": {"uppercase": "однІм", "combining": "одні\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "одна", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "однА", "combining": "одна\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "однієї", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "одніЄї", "combining": "одніє\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_gen", "form": "одної", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Gen"}, "stressed": {"uppercase": "однОї", "combining": "одно\u0301ї"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_dat", "form": "одній", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Dat"}, "stressed": {"uppercase": "однІй", "combining": "одні\u0301й"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_acc", "form": "одну", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Acc"}, "stressed": {"uppercase": "однУ", "combining": "одну\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "однією", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "одніЄю", "combining": "одніє\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_ins", "form": "одною", "grammemes": {"gender": "Fem", "number": "Sing", "case": "Ins"}, "stressed": {"uppercase": "однОю", "combining": "одно\u0301ю"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "одне", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "однЕ", "combining": "одне\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "n_nom", "form": "одно", "grammemes": {"gender": "Neut", "number": "Sing", "case": "Nom"}, "stressed": {"uppercase": "однО", "combining": "одно\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_nom", "form": "одні", "grammemes": {"number": "Plur", "case": "Nom"}, "stressed": {"uppercase": "однІ", "combining": "одні\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_gen", "form": "одних", "grammemes": {"number": "Plur", "case": "Gen"}, "stressed": {"uppercase": "однИх", "combining": "одни\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_dat", "form": "одним", "grammemes": {"number": "Plur", "case": "Dat"}, "stressed": {"uppercase": "однИм", "combining": "одни\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "pl_ins", "form": "одними", "grammemes": {"number": "Plur", "case": "Ins"}, "stressed": {"uppercase": "однИми", "combining": "одни\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0047",
+      "lemma": "два",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "ins", "form": "двома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "двомА", "combining": "двома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0048",
+      "lemma": "три",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "ins", "form": "трьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "трьомА", "combining": "трьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0049",
+      "lemma": "чотири",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "чотири", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "чотИри", "combining": "чоти\u0301ри"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "чотири", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "чотИри", "combining": "чоти\u0301ри"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "чотирьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "чотирьОх", "combining": "чотирьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "чотирьом", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "чотирьОм", "combining": "чотирьо\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "чотирма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "чотирмА", "combining": "чотирма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "чотирьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "чотирьОх", "combining": "чотирьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0050",
+      "lemma": "п'ять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "п'яти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "п'ятИ", "combining": "п'яти\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "п'ятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "п'ятьОх", "combining": "п'ятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "п'яти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "п'ятИ", "combining": "п'яти\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "п'ятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "п'ятьОх", "combining": "п'ятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "п'яти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "п'ятИ", "combining": "п'яти\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "п'ятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "п'ятьОх", "combining": "п'ятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "п'ятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "п'ятьмА", "combining": "п'ятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "п'ятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "п'ятьомА", "combining": "п'ятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0051",
+      "lemma": "шість",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "шести", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "шестИ", "combining": "шести\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "шістьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "шістьОх", "combining": "шістьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "шести", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "шестИ", "combining": "шести\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "шістьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "шістьОх", "combining": "шістьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "шести", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "шестИ", "combining": "шести\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "шістьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "шістьОх", "combining": "шістьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "шістьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "шістьмА", "combining": "шістьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "шістьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "шістьомА", "combining": "шістьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0052",
+      "lemma": "сім",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "gen", "form": "семи", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "семИ", "combining": "семи\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "сімох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "сімОх", "combining": "сімо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "семи", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "семИ", "combining": "семи\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "сімох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "сімОх", "combining": "сімо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "семи", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "семИ", "combining": "семи\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "сімох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "сімОх", "combining": "сімо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "сьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "сьомА", "combining": "сьома\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "сімома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "сімомА", "combining": "сімома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0053",
+      "lemma": "вісім",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "вісім", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "вІсім", "combining": "ві\u0301сім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "вісім", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "вІсім", "combining": "ві\u0301сім"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "восьми", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "восьмИ", "combining": "восьми\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "вісьмох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "вісьмОх", "combining": "вісьмо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "восьми", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "восьмИ", "combining": "восьми\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "вісьмох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "вісьмОх", "combining": "вісьмо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "восьми", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "восьмИ", "combining": "восьми\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "вісьмох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "вісьмОх", "combining": "вісьмо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "вісьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "вісьмА", "combining": "вісьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "вісьмома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "вісьмомА", "combining": "вісьмома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0054",
+      "lemma": "дев'ять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "дев'ять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дЕв'ять", "combining": "де\u0301в'ять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "дев'ять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "дЕв'ять", "combining": "де\u0301в'ять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "дев'яти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дев'ятИ", "combining": "дев'яти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "дев'ятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дев'ятьОх", "combining": "дев'ятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "дев'яти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дев'ятИ", "combining": "дев'яти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "дев'ятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дев'ятьОх", "combining": "дев'ятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "дев'яти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дев'ятИ", "combining": "дев'яти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "дев'ятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дев'ятьОх", "combining": "дев'ятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "дев'ятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дев'ятьмА", "combining": "дев'ятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "дев'ятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дев'ятьомА", "combining": "дев'ятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0055",
+      "lemma": "десять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "десять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дЕсять", "combining": "де\u0301сять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "десять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "дЕсять", "combining": "де\u0301сять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "десяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "десятИ", "combining": "десяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "десятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "десятьОх", "combining": "десятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "десяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "десятИ", "combining": "десяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "десятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "десятьОх", "combining": "десятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "десяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "десятИ", "combining": "десяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "десятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "десятьОх", "combining": "десятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "десятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "десятьмА", "combining": "десятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "десятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "десятьомА", "combining": "десятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0056",
+      "lemma": "одинадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "одинадцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "одинАдцять", "combining": "одина\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "одинадцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "одинАдцять", "combining": "одина\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "одинадцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "одинадцятИ", "combining": "одинадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "одинадцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "одинадцятьОх", "combining": "одинадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "одинадцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "одинадцятИ", "combining": "одинадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "одинадцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "одинадцятьОх", "combining": "одинадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "одинадцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "одинадцятИ", "combining": "одинадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "одинадцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "одинадцятьОх", "combining": "одинадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "одинадцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "одинадцятьмА", "combining": "одинадцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "одинадцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "одинадцятьомА", "combining": "одинадцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0057",
+      "lemma": "дванадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "дванадцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дванАдцять", "combining": "двана\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "дванадцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "дванАдцять", "combining": "двана\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "дванадцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дванадцятИ", "combining": "дванадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "дванадцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дванадцятьОх", "combining": "дванадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "дванадцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дванадцятИ", "combining": "дванадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "дванадцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дванадцятьОх", "combining": "дванадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "дванадцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дванадцятИ", "combining": "дванадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "дванадцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дванадцятьОх", "combining": "дванадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "дванадцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дванадцятьмА", "combining": "дванадцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "дванадцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дванадцятьомА", "combining": "дванадцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0058",
+      "lemma": "тринадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "тринадцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "тринАдцять", "combining": "трина\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "тринадцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "тринАдцять", "combining": "трина\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "тринадцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "тринадцятИ", "combining": "тринадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "тринадцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "тринадцятьОх", "combining": "тринадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "тринадцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "тринадцятИ", "combining": "тринадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "тринадцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "тринадцятьОх", "combining": "тринадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "тринадцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "тринадцятИ", "combining": "тринадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "тринадцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "тринадцятьОх", "combining": "тринадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "тринадцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "тринадцятьмА", "combining": "тринадцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "тринадцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "тринадцятьомА", "combining": "тринадцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0059",
+      "lemma": "чотирнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "чотирнадцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "чотирнАдцять", "combining": "чотирна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "чотирнадцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "чотирнАдцять", "combining": "чотирна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "чотирнадцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "чотирнадцятИ", "combining": "чотирнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "чотирнадцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "чотирнадцятьОх", "combining": "чотирнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "чотирнадцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "чотирнадцятИ", "combining": "чотирнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "чотирнадцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "чотирнадцятьОх", "combining": "чотирнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "чотирнадцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "чотирнадцятИ", "combining": "чотирнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "чотирнадцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "чотирнадцятьОх", "combining": "чотирнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "чотирнадцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "чотирнадцятьмА", "combining": "чотирнадцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "чотирнадцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "чотирнадцятьомА", "combining": "чотирнадцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0060",
+      "lemma": "п'ятнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "п'ятнадцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "п'ятнАдцять", "combining": "п'ятна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "п'ятнадцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "п'ятнАдцять", "combining": "п'ятна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "п'ятнадцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "п'ятнадцятИ", "combining": "п'ятнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "п'ятнадцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "п'ятнадцятьОх", "combining": "п'ятнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "п'ятнадцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "п'ятнадцятИ", "combining": "п'ятнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "п'ятнадцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "п'ятнадцятьОх", "combining": "п'ятнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "п'ятнадцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "п'ятнадцятИ", "combining": "п'ятнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "п'ятнадцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "п'ятнадцятьОх", "combining": "п'ятнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "п'ятнадцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "п'ятнадцятьмА", "combining": "п'ятнадцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "п'ятнадцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "п'ятнадцятьомА", "combining": "п'ятнадцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0061",
+      "lemma": "шістнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "шістнадцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "шістнАдцять", "combining": "шістна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "шістнадцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "шістнАдцять", "combining": "шістна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "шістнадцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "шістнадцятИ", "combining": "шістнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "шістнадцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "шістнадцятьОх", "combining": "шістнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "шістнадцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "шістнадцятИ", "combining": "шістнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "шістнадцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "шістнадцятьОх", "combining": "шістнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "шістнадцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "шістнадцятИ", "combining": "шістнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "шістнадцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "шістнадцятьОх", "combining": "шістнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "шістнадцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "шістнадцятьмА", "combining": "шістнадцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "шістнадцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "шістнадцятьомА", "combining": "шістнадцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0062",
+      "lemma": "сімнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "сімнадцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "сімнАдцять", "combining": "сімна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "сімнадцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "сімнАдцять", "combining": "сімна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "сімнадцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "сімнадцятИ", "combining": "сімнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "сімнадцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "сімнадцятьОх", "combining": "сімнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "сімнадцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "сімнадцятИ", "combining": "сімнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "сімнадцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "сімнадцятьОх", "combining": "сімнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "сімнадцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "сімнадцятИ", "combining": "сімнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "сімнадцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "сімнадцятьОх", "combining": "сімнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "сімнадцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "сімнадцятьмА", "combining": "сімнадцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "сімнадцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "сімнадцятьомА", "combining": "сімнадцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0063",
+      "lemma": "вісімнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "вісімнадцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "вісімнАдцять", "combining": "вісімна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "вісімнадцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "вісімнАдцять", "combining": "вісімна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "вісімнадцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "вісімнадцятИ", "combining": "вісімнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "вісімнадцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "вісімнадцятьОх", "combining": "вісімнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: вісімна\u0301дцятьох (dialectal, dated or after a preposition); вісімнадцятьо\u0301х is the standard form."},
+        {"slot": "dat", "form": "вісімнадцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "вісімнадцятИ", "combining": "вісімнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "вісімнадцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "вісімнадцятьОх", "combining": "вісімнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: вісімна\u0301дцятьох (dialectal, dated or after a preposition); вісімнадцятьо\u0301х is the standard form."},
+        {"slot": "loc", "form": "вісімнадцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "вісімнадцятИ", "combining": "вісімнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "вісімнадцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "вісімнадцятьОх", "combining": "вісімнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: вісімна\u0301дцятьох (dialectal, dated or after a preposition); вісімнадцятьо\u0301х is the standard form."},
+        {"slot": "ins", "form": "вісімнадцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "вісімнадцятьмА", "combining": "вісімнадцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: вісімна\u0301дцятьма (dialectal, dated or after a preposition); вісімнадцятьма\u0301 is the standard form."},
+        {"slot": "ins", "form": "вісімнадцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "вісімнадцятьомА", "combining": "вісімнадцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"], "note": "Also attested for the same word: вісімна\u0301дцятьома (dialectal, dated or after a preposition); вісімнадцятьома\u0301 is the standard form."}
+      ]
+    },
+    {
+      "id": "ukd-0064",
+      "lemma": "дев'ятнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "дев'ятнадцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дев'ятнАдцять", "combining": "дев'ятна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "дев'ятнадцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "дев'ятнАдцять", "combining": "дев'ятна\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "дев'ятнадцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дев'ятнадцятИ", "combining": "дев'ятнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "дев'ятнадцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дев'ятнадцятьОх", "combining": "дев'ятнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "дев'ятнадцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дев'ятнадцятИ", "combining": "дев'ятнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "дев'ятнадцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дев'ятнадцятьОх", "combining": "дев'ятнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "дев'ятнадцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дев'ятнадцятИ", "combining": "дев'ятнадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "дев'ятнадцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дев'ятнадцятьОх", "combining": "дев'ятнадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "дев'ятнадцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дев'ятнадцятьмА", "combining": "дев'ятнадцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "дев'ятнадцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дев'ятнадцятьомА", "combining": "дев'ятнадцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0065",
+      "lemma": "двадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "двадцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "двАдцять", "combining": "два\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "двадцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "двАдцять", "combining": "два\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "двадцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "двадцятИ", "combining": "двадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "двадцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "двадцятьОх", "combining": "двадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "двадцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "двадцятИ", "combining": "двадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "двадцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "двадцятьОх", "combining": "двадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "двадцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "двадцятИ", "combining": "двадцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "двадцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "двадцятьОх", "combining": "двадцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "двадцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "двадцятьмА", "combining": "двадцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "двадцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "двадцятьомА", "combining": "двадцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0066",
+      "lemma": "тридцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "тридцять", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "трИдцять", "combining": "три\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "тридцять", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "трИдцять", "combining": "три\u0301дцять"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "тридцяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "тридцятИ", "combining": "тридцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "тридцятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "тридцятьОх", "combining": "тридцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "тридцяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "тридцятИ", "combining": "тридцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "тридцятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "тридцятьОх", "combining": "тридцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "тридцяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "тридцятИ", "combining": "тридцяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "тридцятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "тридцятьОх", "combining": "тридцятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "тридцятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "тридцятьмА", "combining": "тридцятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "тридцятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "тридцятьомА", "combining": "тридцятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0067",
+      "lemma": "сорок",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "сорок", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "сОрок", "combining": "со\u0301рок"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "сорок", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "сОрок", "combining": "со\u0301рок"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "сорока", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "сорокА", "combining": "сорока\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "сорока", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "сорокА", "combining": "сорока\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "сорока", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "сорокА", "combining": "сорока\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "сорока", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "сорокА", "combining": "сорока\u0301"}, "homograph": true, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0068",
+      "lemma": "п'ятдесят",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "п'ятдесят", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "п'ятдесЯт", "combining": "п'ятдеся\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "п'ятдесят", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "п'ятдесЯт", "combining": "п'ятдеся\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "п'ятдесяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "п'ятдесятИ", "combining": "п'ятдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "п'ятдесятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "п'ятдесятьОх", "combining": "п'ятдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "п'ятдесяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "п'ятдесятИ", "combining": "п'ятдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "п'ятдесятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "п'ятдесятьОх", "combining": "п'ятдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "п'ятдесяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "п'ятдесятИ", "combining": "п'ятдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "п'ятдесятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "п'ятдесятьОх", "combining": "п'ятдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "п'ятдесятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "п'ятдесятьмА", "combining": "п'ятдесятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "п'ятдесятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "п'ятдесятьомА", "combining": "п'ятдесятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0069",
+      "lemma": "шістдесят",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "шістдесят", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "шістдесЯт", "combining": "шістдеся\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "шістдесят", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "шістдесЯт", "combining": "шістдеся\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "шістдесяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "шістдесятИ", "combining": "шістдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "шістдесятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "шістдесятьОх", "combining": "шістдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "шістдесяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "шістдесятИ", "combining": "шістдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "шістдесятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "шістдесятьОх", "combining": "шістдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "шістдесяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "шістдесятИ", "combining": "шістдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "шістдесятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "шістдесятьОх", "combining": "шістдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "шістдесятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "шістдесятьмА", "combining": "шістдесятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "шістдесятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "шістдесятьомА", "combining": "шістдесятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0070",
+      "lemma": "сімдесят",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "сімдесят", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "сімдесЯт", "combining": "сімдеся\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "сімдесят", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "сімдесЯт", "combining": "сімдеся\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "сімдесяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "сімдесятИ", "combining": "сімдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "сімдесятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "сімдесятьОх", "combining": "сімдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "сімдесяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "сімдесятИ", "combining": "сімдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "сімдесятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "сімдесятьОх", "combining": "сімдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "сімдесяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "сімдесятИ", "combining": "сімдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "сімдесятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "сімдесятьОх", "combining": "сімдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "сімдесятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "сімдесятьмА", "combining": "сімдесятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "сімдесятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "сімдесятьомА", "combining": "сімдесятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0071",
+      "lemma": "вісімдесят",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "вісімдесят", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "вісімдесЯт", "combining": "вісімдеся\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "вісімдесят", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "вісімдесЯт", "combining": "вісімдеся\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "вісімдесяти", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "вісімдесятИ", "combining": "вісімдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "вісімдесятьох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "вісімдесятьОх", "combining": "вісімдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "вісімдесяти", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "вісімдесятИ", "combining": "вісімдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "вісімдесятьох", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "вісімдесятьОх", "combining": "вісімдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "вісімдесяти", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "вісімдесятИ", "combining": "вісімдесяти\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "вісімдесятьох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "вісімдесятьОх", "combining": "вісімдесятьо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "вісімдесятьма", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "вісімдесятьмА", "combining": "вісімдесятьма\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "вісімдесятьома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "вісімдесятьомА", "combining": "вісімдесятьома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0072",
+      "lemma": "дев'яносто",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "дев'яносто", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дев'янОсто", "combining": "дев'яно\u0301сто"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "дев'яносто", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "дев'янОсто", "combining": "дев'яно\u0301сто"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "дев'яноста", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дев'янОста", "combining": "дев'яно\u0301ста"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "дев'яноста", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дев'янОста", "combining": "дев'яно\u0301ста"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "дев'яноста", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дев'янОста", "combining": "дев'яно\u0301ста"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "дев'яноста", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дев'янОста", "combining": "дев'яно\u0301ста"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0073",
+      "lemma": "двісті",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "двісті", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "двІсті", "combining": "дві\u0301сті"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "двісті", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "двІсті", "combining": "дві\u0301сті"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "двохсот", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "двохсОт", "combining": "двохсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "двомстам", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "двомстАм", "combining": "двомста\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "двомастами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "двомастАми", "combining": "двомаста\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "двохстах", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "двохстАх", "combining": "двохста\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0074",
+      "lemma": "триста",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "триста", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "трИста", "combining": "три\u0301ста"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "триста", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "трИста", "combining": "три\u0301ста"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "трьохсот", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "трьохсОт", "combining": "трьохсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "трьомстам", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "трьомстАм", "combining": "трьомста\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "трьомастами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "трьомастАми", "combining": "трьомаста\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "трьохстах", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "трьохстАх", "combining": "трьохста\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0075",
+      "lemma": "чотириста",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "чотириста", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "чотИриста", "combining": "чоти\u0301риста"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "чотириста", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "чотИриста", "combining": "чоти\u0301риста"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "чотирьохсот", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "чотирьохсОт", "combining": "чотирьохсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "чотирьомстам", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "чотирьомстАм", "combining": "чотирьомста\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "чотирмастами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "чотирмастАми", "combining": "чотирмаста\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "чотирьохстах", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "чотирьохстАх", "combining": "чотирьохста\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0076",
+      "lemma": "п'ятсот",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "п'ятсот", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "п'ятсОт", "combining": "п'ятсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "п'ятсот", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "п'ятсОт", "combining": "п'ятсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "п'ятисот", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "п'ятисОт", "combining": "п'ятисо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "п'ятистам", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "п'ятистАм", "combining": "п'ятиста\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "п'ятьмастами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "п'ятьмастАми", "combining": "п'ятьмаста\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "п'ятьомастами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "п'ятьомастАми", "combining": "п'ятьомаста\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "п'ятистах", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "п'ятистАх", "combining": "п'ятиста\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0077",
+      "lemma": "шістсот",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "шістсот", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "шістсОт", "combining": "шістсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "шістсот", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "шістсОт", "combining": "шістсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "шестисот", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "шестисОт", "combining": "шестисо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "шестистам", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "шестистАм", "combining": "шестиста\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "шістьмастами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "шістьмастАми", "combining": "шістьмаста\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "шестистах", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "шестистАх", "combining": "шестиста\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0078",
+      "lemma": "сімсот",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "сімсот", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "сімсОт", "combining": "сімсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "сімсот", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "сімсОт", "combining": "сімсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "семисот", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "семисОт", "combining": "семисо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "семистам", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "семистАм", "combining": "семиста\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "сімомастами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "сімомастАми", "combining": "сімомаста\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "семистах", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "семистАх", "combining": "семиста\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0079",
+      "lemma": "вісімсот",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "вісімсот", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "вісімсОт", "combining": "вісімсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "вісімсот", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "вісімсОт", "combining": "вісімсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "восьмисот", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "восьмисОт", "combining": "восьмисо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "восьмистам", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "восьмистАм", "combining": "восьмиста\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "восьмистах", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "восьмистАх", "combining": "восьмиста\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0080",
+      "lemma": "дев'ятсот",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "дев'ятсот", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дев'ятсОт", "combining": "дев'ятсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "acc", "form": "дев'ятсот", "grammemes": {"case": "Acc"}, "stressed": {"uppercase": "дев'ятсОт", "combining": "дев'ятсо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "дев'ятисот", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "дев'ятисОт", "combining": "дев'ятисо\u0301т"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "дев'ятистам", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "дев'ятистАм", "combining": "дев'ятиста\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "дев'ятьмастами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дев'ятьмастАми", "combining": "дев'ятьмаста\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "дев'ятьомастами", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "дев'ятьомастАми", "combining": "дев'ятьомаста\u0301ми"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "дев'ятистах", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "дев'ятистАх", "combining": "дев'ятиста\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0081",
+      "lemma": "обидва",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "обидва", "grammemes": {"gender": "Masc", "case": "Nom"}, "stressed": {"uppercase": "обИдва", "combining": "оби\u0301два"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "f_nom", "form": "обидві", "grammemes": {"gender": "Fem", "case": "Nom"}, "stressed": {"uppercase": "обИдві", "combining": "оби\u0301дві"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "gen", "form": "обох", "grammemes": {"case": "Gen"}, "stressed": {"uppercase": "обОх", "combining": "обо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "dat", "form": "обом", "grammemes": {"case": "Dat"}, "stressed": {"uppercase": "обОм", "combining": "обо\u0301м"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "ins", "form": "обома", "grammemes": {"case": "Ins"}, "stressed": {"uppercase": "обомА", "combining": "обома\u0301"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]},
+        {"slot": "loc", "form": "обох", "grammemes": {"case": "Loc"}, "stressed": {"uppercase": "обОх", "combining": "обо\u0301х"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0082",
+      "lemma": "двоє",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "двоє", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "двОє", "combining": "дво\u0301є"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0083",
+      "lemma": "троє",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "троє", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "трОє", "combining": "тро\u0301є"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0084",
+      "lemma": "четверо",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "четверо", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "чЕтверо", "combining": "че\u0301тверо"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0085",
+      "lemma": "п'ятеро",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "п'ятеро", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "п'Ятеро", "combining": "п'я\u0301теро"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0086",
+      "lemma": "шестеро",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "шестеро", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "шЕстеро", "combining": "ше\u0301стеро"}, "homograph": false, "verified_by": ["ulif"]}
+      ]
+    },
+    {
+      "id": "ukd-0087",
+      "lemma": "семеро",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "семеро", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "сЕмеро", "combining": "се\u0301меро"}, "homograph": false, "verified_by": ["ulif"]}
+      ]
+    },
+    {
+      "id": "ukd-0088",
+      "lemma": "восьмеро",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "восьмеро", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "вОсьмеро", "combining": "во\u0301сьмеро"}, "homograph": false, "verified_by": ["ulif"]}
+      ]
+    },
+    {
+      "id": "ukd-0089",
+      "lemma": "дев'ятеро",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "дев'ятеро", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дЕв'ятеро", "combining": "де\u0301в'ятеро"}, "homograph": false, "verified_by": ["ulif"]}
+      ]
+    },
+    {
+      "id": "ukd-0090",
+      "lemma": "десятеро",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "десятеро", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "дЕсятеро", "combining": "де\u0301сятеро"}, "homograph": false, "verified_by": ["ulif"]}
+      ]
+    },
+    {
+      "id": "ukd-0091",
+      "lemma": "обоє",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "nom", "form": "обоє", "grammemes": {"case": "Nom"}, "stressed": {"uppercase": "обОє", "combining": "обо\u0301є"}, "homograph": false, "verified_by": ["ulif", "wiktionary"]}
+      ]
+    },
+    {
+      "id": "ukd-0092",
+      "lemma": "півтора",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "forms": [
+        {"slot": "m_nom", "form": "півтора", "grammemes": {"gender": "Masc", "case": "Nom"}, "stressed": {"uppercase": "півторА", "combining": "півтора\u0301"}, "homograph": false, "verified_by": ["ulif"]},
+        {"slot": "f_nom", "form": "півтори", "grammemes": {"gender": "Fem", "case": "Nom"}, "stressed": {"uppercase": "півторИ", "combining": "півтори\u0301"}, "homograph": false, "verified_by": ["ulif"]}
+      ]
+    }
+  ]
+}
