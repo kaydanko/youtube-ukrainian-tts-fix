@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "lexicon_version": "0.9.0",
+  "lexicon_version": "0.10.0",
   "language": "uk-UA",
   "name": "Ukrainian TTS Fixed-Stress Lemmas",
   "description": "Community-maintained list of Ukrainian lemmas whose stress never moves: in every wordform the stress falls on the same syllable. Companion to standard_lexicon.json, which lists individual wordforms (including mobile-stress paradigms and homographs).",
@@ -59741,6 +59741,348 @@
         {"uppercase": "сЕрдишся", "combining": "се\u0301рдишся"},
         {"uppercase": "сЕрдиться", "combining": "се\u0301рдиться"},
         {"uppercase": "сЕрдилася", "combining": "се\u0301рдилася"}
+      ]
+    },
+    {
+      "id": "ukf-4548",
+      "lemma": "перетерпіти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "перетЕрпіти", "combining": "перете\u0301рпіти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "перетЕрплю", "combining": "перете\u0301рплю"},
+        {"uppercase": "перетЕрпиш", "combining": "перете\u0301рпиш"},
+        {"uppercase": "перетЕрпить", "combining": "перете\u0301рпить"},
+        {"uppercase": "перетЕрпіла", "combining": "перете\u0301рпіла"}
+      ]
+    },
+    {
+      "id": "ukf-4549",
+      "lemma": "перестати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "перестАти", "combining": "переста\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "перестАну", "combining": "переста\u0301ну"},
+        {"uppercase": "перестАнеш", "combining": "переста\u0301неш"},
+        {"uppercase": "перестАне", "combining": "переста\u0301не"},
+        {"uppercase": "перестАла", "combining": "переста\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4550",
+      "lemma": "відстати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "відстАти", "combining": "відста\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "відстАну", "combining": "відста\u0301ну"},
+        {"uppercase": "відстАнеш", "combining": "відста\u0301неш"},
+        {"uppercase": "відстАне", "combining": "відста\u0301не"},
+        {"uppercase": "відстАла", "combining": "відста\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4551",
+      "lemma": "дістати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "дістАти", "combining": "діста\u0301ти"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "дістАну", "combining": "діста\u0301ну"},
+        {"uppercase": "дістАнеш", "combining": "діста\u0301неш"},
+        {"uppercase": "дістАне", "combining": "діста\u0301не"},
+        {"uppercase": "дістАла", "combining": "діста\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4552",
+      "lemma": "застати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "застАти", "combining": "заста\u0301ти"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "застАну", "combining": "заста\u0301ну"},
+        {"uppercase": "застАнеш", "combining": "заста\u0301неш"},
+        {"uppercase": "застАне", "combining": "заста\u0301не"},
+        {"uppercase": "застАла", "combining": "заста\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4553",
+      "lemma": "настати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "настАти", "combining": "наста\u0301ти"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "настАну", "combining": "наста\u0301ну"},
+        {"uppercase": "настАнеш", "combining": "наста\u0301неш"},
+        {"uppercase": "настАне", "combining": "наста\u0301не"},
+        {"uppercase": "настАла", "combining": "наста\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4554",
+      "lemma": "пристати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "пристАти", "combining": "приста\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "пристАну", "combining": "приста\u0301ну"},
+        {"uppercase": "пристАнеш", "combining": "приста\u0301неш"},
+        {"uppercase": "пристАне", "combining": "приста\u0301не"},
+        {"uppercase": "пристАла", "combining": "приста\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4555",
+      "lemma": "пересісти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "пересІсти", "combining": "пересі\u0301сти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "пересЯду", "combining": "переся\u0301ду"},
+        {"uppercase": "пересЯдеш", "combining": "переся\u0301деш"},
+        {"uppercase": "пересЯде", "combining": "переся\u0301де"},
+        {"uppercase": "пересІла", "combining": "пересі\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4556",
+      "lemma": "присісти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "присІсти", "combining": "присі\u0301сти"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "присЯду", "combining": "прися\u0301ду"},
+        {"uppercase": "присЯдеш", "combining": "прися\u0301деш"},
+        {"uppercase": "присЯде", "combining": "прися\u0301де"},
+        {"uppercase": "присІла", "combining": "присі\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4557",
+      "lemma": "підсісти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "підсІсти", "combining": "підсі\u0301сти"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "підсЯду", "combining": "підся\u0301ду"},
+        {"uppercase": "підсЯдеш", "combining": "підся\u0301деш"},
+        {"uppercase": "підсЯде", "combining": "підся\u0301де"},
+        {"uppercase": "підсІла", "combining": "підсі\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4558",
+      "lemma": "постояти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "постОяти", "combining": "посто\u0301яти"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "постОю", "combining": "посто\u0301ю"},
+        {"uppercase": "постОїш", "combining": "посто\u0301їш"},
+        {"uppercase": "постОїть", "combining": "посто\u0301їть"},
+        {"uppercase": "постОяла", "combining": "посто\u0301яла"}
+      ]
+    },
+    {
+      "id": "ukf-4559",
+      "lemma": "простояти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "простОяти", "combining": "просто\u0301яти"},
+      "stress_char_index": 5,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "простОю", "combining": "просто\u0301ю"},
+        {"uppercase": "простОїш", "combining": "просто\u0301їш"},
+        {"uppercase": "простОїть", "combining": "просто\u0301їть"},
+        {"uppercase": "простОяла", "combining": "просто\u0301яла"}
+      ]
+    },
+    {
+      "id": "ukf-4560",
+      "lemma": "встояти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "встОяти", "combining": "всто\u0301яти"},
+      "stress_char_index": 3,
+      "stress_syllable": 1,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "встОю", "combining": "всто\u0301ю"},
+        {"uppercase": "встОїш", "combining": "всто\u0301їш"},
+        {"uppercase": "встОїть", "combining": "всто\u0301їть"},
+        {"uppercase": "встОяла", "combining": "всто\u0301яла"}
+      ]
+    },
+    {
+      "id": "ukf-4561",
+      "lemma": "посидіти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "посИдіти", "combining": "поси\u0301діти"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "посИджу", "combining": "поси\u0301джу"},
+        {"uppercase": "посИдиш", "combining": "поси\u0301диш"},
+        {"uppercase": "посИдить", "combining": "поси\u0301дить"},
+        {"uppercase": "посИділа", "combining": "поси\u0301діла"}
+      ]
+    },
+    {
+      "id": "ukf-4562",
+      "lemma": "просидіти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "просИдіти", "combining": "проси\u0301діти"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "просИджу", "combining": "проси\u0301джу"},
+        {"uppercase": "просИдиш", "combining": "проси\u0301диш"},
+        {"uppercase": "просИдить", "combining": "проси\u0301дить"},
+        {"uppercase": "просИділа", "combining": "проси\u0301діла"}
+      ]
+    },
+    {
+      "id": "ukf-4563",
+      "lemma": "полежати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "полЕжати", "combining": "поле\u0301жати"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "полЕжу", "combining": "поле\u0301жу"},
+        {"uppercase": "полЕжиш", "combining": "поле\u0301жиш"},
+        {"uppercase": "полЕжить", "combining": "поле\u0301жить"},
+        {"uppercase": "полЕжала", "combining": "поле\u0301жала"}
+      ]
+    },
+    {
+      "id": "ukf-4564",
+      "lemma": "пролежати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "пролЕжати", "combining": "проле\u0301жати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "пролЕжу", "combining": "проле\u0301жу"},
+        {"uppercase": "пролЕжиш", "combining": "проле\u0301жиш"},
+        {"uppercase": "пролЕжить", "combining": "проле\u0301жить"},
+        {"uppercase": "пролЕжала", "combining": "проле\u0301жала"}
+      ]
+    },
+    {
+      "id": "ukf-4565",
+      "lemma": "помовчати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "помОвчати", "combining": "помо\u0301вчати"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "помОвчу", "combining": "помо\u0301вчу"},
+        {"uppercase": "помОвчиш", "combining": "помо\u0301вчиш"},
+        {"uppercase": "помОвчить", "combining": "помо\u0301вчить"},
+        {"uppercase": "помОвчала", "combining": "помо\u0301вчала"}
+      ]
+    },
+    {
+      "id": "ukf-4566",
+      "lemma": "промовчати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "промОвчати", "combining": "промо\u0301вчати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "промОвчу", "combining": "промо\u0301вчу"},
+        {"uppercase": "промОвчиш", "combining": "промо\u0301вчиш"},
+        {"uppercase": "промОвчить", "combining": "промо\u0301вчить"},
+        {"uppercase": "промОвчала", "combining": "промо\u0301вчала"}
       ]
     }
   ]
