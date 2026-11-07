@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "lexicon_version": "0.2.1",
+  "lexicon_version": "0.2.2",
   "language": "uk-UA",
   "name": "Ukrainian TTS Fixed-Stress Lexicon",
   "description": "Community-maintained lexicon of Ukrainian wordforms with authoritative fixed lexical stress, intended for ingestion by Text-to-Speech / automated dubbing pipelines.",
@@ -565,7 +565,8 @@
       "lemma": "одинадцять",
       "pos": "NUM",
       "lemma_features": {"num_type": "Card"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0017-01",
@@ -588,7 +589,8 @@
       "lemma": "чотирнадцять",
       "pos": "NUM",
       "lemma_features": {"num_type": "Card"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0018-01",
@@ -2933,7 +2935,8 @@
       "lemma": "який",
       "pos": "DET",
       "lemma_features": {"pron_type": "Int,Rel"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0102-01",
@@ -2953,7 +2956,8 @@
       "lemma": "котрий",
       "pos": "DET",
       "lemma_features": {"pron_type": "Int,Rel"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0103-01",
@@ -2973,7 +2977,8 @@
       "lemma": "дванадцять",
       "pos": "NUM",
       "lemma_features": {"num_type": "Card"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0104-01",
@@ -2993,7 +2998,8 @@
       "lemma": "тринадцять",
       "pos": "NUM",
       "lemma_features": {"num_type": "Card"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0105-01",
@@ -3013,7 +3019,8 @@
       "lemma": "п'ятнадцять",
       "pos": "NUM",
       "lemma_features": {"num_type": "Card"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0106-01",
@@ -3033,7 +3040,8 @@
       "lemma": "шістнадцять",
       "pos": "NUM",
       "lemma_features": {"num_type": "Card"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0107-01",
@@ -3053,7 +3061,8 @@
       "lemma": "сімнадцять",
       "pos": "NUM",
       "lemma_features": {"num_type": "Card"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0108-01",
@@ -3073,7 +3082,8 @@
       "lemma": "вісімнадцять",
       "pos": "NUM",
       "lemma_features": {"num_type": "Card"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0109-01",
@@ -3096,7 +3106,8 @@
       "lemma": "дев'ятнадцять",
       "pos": "NUM",
       "lemma_features": {"num_type": "Card"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "Superseded by the full paradigm (all cases, verified against two sources) in declension_paradigms.json; the stress given here is unchanged and correct.",
       "wordforms": [
         {
           "id": "uk-0110-01",
