@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "lexicon_version": "0.2.0",
+  "lexicon_version": "0.2.1",
   "language": "uk-UA",
   "name": "Ukrainian TTS Fixed-Stress Lexicon",
   "description": "Community-maintained lexicon of Ukrainian wordforms with authoritative fixed lexical stress, intended for ingestion by Text-to-Speech / automated dubbing pipelines.",
@@ -11,6 +11,7 @@
     "Словник української мови у 20 томах (СУМ-20)",
     "Український правопис (редакція 2019 року)"
   ],
+  "verification": "Every stressed form was cross-checked against the open ukrainian-word-stress dictionary (lang-uk, MIT; data derived from ULIF 'Словники України'). No data was copied from it: it was used only to find and fix errors.",
   "notation": {
     "uppercase": {
       "description": "The stressed vowel is written as a single uppercase letter; all other letters are lowercase. Serialization format only: engines MUST match against the lowercase 'form'.",
@@ -28,10 +29,12 @@
     "disambiguate_by": "How a homograph is resolved: 'grammemes' (case/number), 'pos' (part of speech), 'aspect' (verb aspect) or 'sense' (word meaning)."
   },
   "status_values": {
+    "disputed": "Normative sources disagree on this stress; MUST NOT be applied until a linguist resolves it.",
     "seed": "Initial entry checked against the normative references; awaiting independent review by a second contributor.",
     "verified": "Confirmed by at least two independent reviewers with a cited normative source.",
-    "deprecated": "Kept for traceability; MUST NOT be applied."
+    "deprecated": "Kept for traceability (ids are never reused); MUST NOT be applied."
   },
+  "status_scope": "'status' is set per lemma; a wordform may override it with its own 'status' (e.g. one disputed form in an otherwise accepted paradigm). 'note' explains the decision.",
   "matching": {
     "unit": "whole_word",
     "case_sensitive": false,
@@ -100,7 +103,9 @@
           "syllable_count": 2,
           "incorrect_variants": [{"uppercase": "водУ", "combining": "воду\u0301"}],
           "homograph": false,
-          "example": "Я п'ю во\u0301ду."
+          "example": "Я п'ю во\u0301ду.",
+          "status": "disputed",
+          "note": "ULIF gives воду\u0301; во\u0301ду is the form in classic orthoepic lists. ULIF dictionary data disagree with the classic orthoepic norm used in school lists; needs a linguist's decision."
         }
       ]
     },
@@ -267,8 +272,9 @@
           "stress_char_index": 4,
           "stress_syllable": 2,
           "syllable_count": 2,
-          "incorrect_variants": [{"uppercase": "сЕстер", "combining": "се\u0301стер"}],
-          "homograph": false
+          "incorrect_variants": [],
+          "homograph": false,
+          "note": "се\u0301стер is also a normative variant."
         }
       ]
     },
@@ -287,10 +293,7 @@
           "stress_char_index": 3,
           "stress_syllable": 2,
           "syllable_count": 3,
-          "incorrect_variants": [
-            {"uppercase": "вИдання", "combining": "ви\u0301дання"},
-            {"uppercase": "виданнЯ", "combining": "видання\u0301"}
-          ],
+          "incorrect_variants": [{"uppercase": "вИдання", "combining": "ви\u0301дання"}],
           "homograph": false
         }
       ]
@@ -333,11 +336,9 @@
           "stress_char_index": 3,
           "stress_syllable": 2,
           "syllable_count": 3,
-          "incorrect_variants": [
-            {"uppercase": "пОмилка", "combining": "по\u0301милка"},
-            {"uppercase": "помилкА", "combining": "помилка\u0301"}
-          ],
-          "homograph": false
+          "incorrect_variants": [{"uppercase": "помилкА", "combining": "помилка\u0301"}],
+          "homograph": false,
+          "note": "по\u0301милка is also listed as a normative variant."
         },
         {
           "id": "uk-0007-02",
@@ -347,11 +348,10 @@
           "stress_char_index": 3,
           "stress_syllable": 2,
           "syllable_count": 3,
-          "incorrect_variants": [
-            {"uppercase": "пОмилки", "combining": "по\u0301милки"},
-            {"uppercase": "помилкИ", "combining": "помилки\u0301"}
-          ],
-          "homograph": false
+          "incorrect_variants": [{"uppercase": "пОмилки", "combining": "по\u0301милки"}],
+          "homograph": false,
+          "status": "disputed",
+          "note": "ULIF gives Nom.Pl помилки\u0301. ULIF dictionary data disagree with the classic orthoepic norm used in school lists; needs a linguist's decision."
         }
       ]
     },
@@ -463,7 +463,8 @@
       "lemma": "кидати",
       "pos": "VERB",
       "lemma_features": {"aspect": "Imp"},
-      "status": "seed",
+      "status": "disputed",
+      "note": "ULIF gives ки\u0301дати; кида\u0301ти is the form in classic orthoepic lists. ULIF dictionary data disagree with the classic orthoepic norm used in school lists; needs a linguist's decision.",
       "wordforms": [
         {
           "id": "uk-0013-01",
@@ -543,7 +544,8 @@
       "id": "uk-0016",
       "lemma": "оптовий",
       "pos": "ADJ",
-      "status": "seed",
+      "status": "disputed",
+      "note": "ULIF gives опто\u0301вий. ULIF dictionary data disagree with the classic orthoepic norm used in school lists; needs a linguist's decision.",
       "wordforms": [
         {
           "id": "uk-0016-01",
@@ -605,7 +607,8 @@
       "id": "uk-0019",
       "lemma": "завжди",
       "pos": "ADV",
-      "status": "seed",
+      "status": "deprecated",
+      "note": "за\u0301вжди / завжди\u0301: Both stresses are normative variants, so there is no single correct stress to enforce.",
       "wordforms": [
         {
           "id": "uk-0019-01",
@@ -624,7 +627,8 @@
       "id": "uk-0020",
       "lemma": "мабуть",
       "pos": "ADV",
-      "status": "seed",
+      "status": "deprecated",
+      "note": "ма\u0301буть / мабу\u0301ть: Both stresses are normative variants, so there is no single correct stress to enforce.",
       "wordforms": [
         {
           "id": "uk-0020-01",
@@ -927,7 +931,9 @@
             "disambiguate_by": "grammemes",
             "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "холодні", "сніжні", "теплі"]
           },
-          "example": "Останні зи\u0301ми теплі."
+          "example": "Останні зи\u0301ми теплі.",
+          "status": "disputed",
+          "note": "ULIF gives зими\u0301 for every reading of this form. ULIF dictionary data disagree with the classic orthoepic norm used in school lists; needs a linguist's decision."
         },
         {
           "id": "uk-0026-04",
@@ -938,7 +944,9 @@
           "stress_syllable": 1,
           "syllable_count": 2,
           "incorrect_variants": [{"uppercase": "зимУ", "combining": "зиму\u0301"}],
-          "homograph": false
+          "homograph": false,
+          "status": "disputed",
+          "note": "ULIF gives зиму\u0301. ULIF dictionary data disagree with the classic orthoepic norm used in school lists; needs a linguist's decision."
         }
       ]
     },
@@ -1601,7 +1609,8 @@
       "lemma": "ремінь",
       "pos": "NOUN",
       "lemma_features": {"gender": "Masc"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "ре\u0301мінь / ремі\u0301нь: Both stresses are normative variants, so there is no single correct stress to enforce.",
       "wordforms": [
         {
           "id": "uk-0044-01",
@@ -1814,7 +1823,8 @@
       "lemma": "алфавіт",
       "pos": "NOUN",
       "lemma_features": {"gender": "Masc"},
-      "status": "seed",
+      "status": "deprecated",
+      "note": "алфа\u0301віт / алфаві\u0301т: Both stresses are normative variants, so there is no single correct stress to enforce.",
       "wordforms": [
         {
           "id": "uk-0053-01",
@@ -1874,7 +1884,8 @@
       "lemma": "обіцянка",
       "pos": "NOUN",
       "lemma_features": {"gender": "Fem"},
-      "status": "seed",
+      "status": "disputed",
+      "note": "ULIF gives обіця\u0301нка. ULIF dictionary data disagree with the classic orthoepic norm used in school lists; needs a linguist's decision.",
       "wordforms": [
         {
           "id": "uk-0056-01",
@@ -1940,11 +1951,11 @@
           "id": "uk-0059-01",
           "form": "статуя",
           "grammemes": {"case": "Nom", "number": "Sing"},
-          "stressed": {"uppercase": "статУя", "combining": "стату\u0301я"},
-          "stress_char_index": 4,
-          "stress_syllable": 2,
+          "stressed": {"uppercase": "стАтуя", "combining": "ста\u0301туя"},
+          "stress_char_index": 2,
+          "stress_syllable": 1,
           "syllable_count": 3,
-          "incorrect_variants": [{"uppercase": "стАтуя", "combining": "ста\u0301туя"}],
+          "incorrect_variants": [{"uppercase": "статУя", "combining": "стату\u0301я"}],
           "homograph": false
         }
       ]
@@ -2000,11 +2011,11 @@
           "id": "uk-0062-01",
           "form": "псевдонім",
           "grammemes": {"case": "Nom", "number": "Sing"},
-          "stressed": {"uppercase": "псевдОнім", "combining": "псевдо\u0301нім"},
-          "stress_char_index": 5,
-          "stress_syllable": 2,
+          "stressed": {"uppercase": "псевдонІм", "combining": "псевдоні\u0301м"},
+          "stress_char_index": 7,
+          "stress_syllable": 3,
           "syllable_count": 3,
-          "incorrect_variants": [{"uppercase": "псевдонІм", "combining": "псевдоні\u0301м"}],
+          "incorrect_variants": [{"uppercase": "псевдОнім", "combining": "псевдо\u0301нім"}],
           "homograph": false
         }
       ]
@@ -2313,11 +2324,11 @@
           "id": "uk-0077-01",
           "form": "дрова",
           "grammemes": {"case": "Nom", "number": "Ptan"},
-          "stressed": {"uppercase": "дровА", "combining": "дрова\u0301"},
-          "stress_char_index": 4,
-          "stress_syllable": 2,
+          "stressed": {"uppercase": "дрОва", "combining": "дро\u0301ва"},
+          "stress_char_index": 2,
+          "stress_syllable": 1,
           "syllable_count": 2,
-          "incorrect_variants": [{"uppercase": "дрОва", "combining": "дро\u0301ва"}],
+          "incorrect_variants": [{"uppercase": "дровА", "combining": "дрова\u0301"}],
           "homograph": false
         }
       ]
@@ -2356,22 +2367,22 @@
           "id": "uk-0079-01",
           "form": "взяла",
           "grammemes": {"verb_form": "Fin", "tense": "Past", "gender": "Fem", "number": "Sing"},
-          "stressed": {"uppercase": "взялА", "combining": "взяла\u0301"},
-          "stress_char_index": 4,
-          "stress_syllable": 2,
+          "stressed": {"uppercase": "взЯла", "combining": "взя\u0301ла"},
+          "stress_char_index": 2,
+          "stress_syllable": 1,
           "syllable_count": 2,
-          "incorrect_variants": [{"uppercase": "взЯла", "combining": "взя\u0301ла"}],
+          "incorrect_variants": [{"uppercase": "взялА", "combining": "взяла\u0301"}],
           "homograph": false
         },
         {
           "id": "uk-0079-02",
           "form": "взяли",
           "grammemes": {"verb_form": "Fin", "tense": "Past", "number": "Plur"},
-          "stressed": {"uppercase": "взялИ", "combining": "взяли\u0301"},
-          "stress_char_index": 4,
-          "stress_syllable": 2,
+          "stressed": {"uppercase": "взЯли", "combining": "взя\u0301ли"},
+          "stress_char_index": 2,
+          "stress_syllable": 1,
           "syllable_count": 2,
-          "incorrect_variants": [{"uppercase": "взЯли", "combining": "взя\u0301ли"}],
+          "incorrect_variants": [{"uppercase": "взялИ", "combining": "взяли\u0301"}],
           "homograph": false
         }
       ]
@@ -2516,7 +2527,8 @@
       "lemma": "ненавидіти",
       "pos": "VERB",
       "lemma_features": {"aspect": "Imp"},
-      "status": "seed",
+      "status": "disputed",
+      "note": "ULIF gives нена\u0301видіти. ULIF dictionary data disagree with the classic orthoepic norm used in school lists; needs a linguist's decision.",
       "wordforms": [
         {
           "id": "uk-0085-01",
@@ -2672,8 +2684,9 @@
           "stress_char_index": 4,
           "stress_syllable": 2,
           "syllable_count": 2,
-          "incorrect_variants": [{"uppercase": "прОшу", "combining": "про\u0301шу"}],
-          "homograph": false
+          "incorrect_variants": [],
+          "homograph": false,
+          "note": "про\u0301шу is also attested as a normative variant."
         },
         {
           "id": "uk-0091-02",
@@ -2880,7 +2893,8 @@
       "id": "uk-0100",
       "lemma": "зручний",
       "pos": "ADJ",
-      "status": "seed",
+      "status": "disputed",
+      "note": "ULIF gives зру\u0301чний. ULIF dictionary data disagree with the classic orthoepic norm used in school lists; needs a linguist's decision.",
       "wordforms": [
         {
           "id": "uk-0100-01",
