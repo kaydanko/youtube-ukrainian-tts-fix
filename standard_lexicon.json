@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "lexicon_version": "0.1.0",
+  "lexicon_version": "0.2.0",
   "language": "uk-UA",
   "name": "Ukrainian TTS Fixed-Stress Lexicon",
   "description": "Community-maintained lexicon of Ukrainian wordforms with authoritative fixed lexical stress, intended for ingestion by Text-to-Speech / automated dubbing pipelines.",
   "license": "MIT",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "normative_references": [
     "Орфоепічний словник української мови (Інститут української мови НАН України)",
     "Словник української мови у 20 томах (СУМ-20)",
@@ -23,7 +23,9 @@
     },
     "stress_char_index": "0-based index (in Unicode code points) of the stressed vowel inside 'form'.",
     "stress_syllable": "1-based ordinal of the stressed syllable, counted from the start of the word.",
-    "grammemes": "Universal Dependencies (UD v2) feature names and values, lowercased keys (case, number, gender, tense, verb_form, aspect, num_type)."
+    "grammemes": "Universal Dependencies (UD v2) feature names and values, lowercased keys (case, number, gender, person, tense, verb_form, aspect, num_type, pron_type). number 'Ptan' marks plurale tantum.",
+    "sense": "Optional short English gloss that separates lexical homographs with identical grammemes (e.g. замок 'castle' vs 'lock').",
+    "disambiguate_by": "How a homograph is resolved: 'grammemes' (case/number), 'pos' (part of speech), 'aspect' (verb aspect) or 'sense' (word meaning)."
   },
   "status_values": {
     "seed": "Initial entry checked against the normative references; awaiting independent review by a second contributor.",
@@ -504,6 +506,17 @@
           "syllable_count": 2,
           "incorrect_variants": [{"uppercase": "бУло", "combining": "бу\u0301ло"}],
           "homograph": false
+        },
+        {
+          "id": "uk-0014-03",
+          "form": "були",
+          "grammemes": {"verb_form": "Fin", "tense": "Past", "number": "Plur"},
+          "stressed": {"uppercase": "булИ", "combining": "були\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "бУли", "combining": "бу\u0301ли"}],
+          "homograph": false
         }
       ]
     },
@@ -622,6 +635,2504 @@
           "stress_syllable": 2,
           "syllable_count": 2,
           "incorrect_variants": [{"uppercase": "мАбуть", "combining": "ма\u0301буть"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0021",
+      "lemma": "дочка",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0021-01",
+          "form": "дочка",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "дочкА", "combining": "дочка\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "дОчка", "combining": "до\u0301чка"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0022",
+      "lemma": "донька",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0022-01",
+          "form": "донька",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "дОнька", "combining": "до\u0301нька"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "донькА", "combining": "донька\u0301"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0023",
+      "lemma": "нога",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0023-01",
+          "form": "нога",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "ногА", "combining": "нога\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "нОга", "combining": "но\u0301га"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0023-02",
+          "form": "ноги",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "ногИ", "combining": "ноги\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "нОги", "combining": "но\u0301ги"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля"]
+          },
+          "example": "Без лівої ноги\u0301."
+        },
+        {
+          "id": "uk-0023-03",
+          "form": "ноги",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "нОги", "combining": "но\u0301ги"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "ногИ", "combining": "ноги\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі"]
+          },
+          "example": "У мене болять но\u0301ги."
+        },
+        {
+          "id": "uk-0023-04",
+          "form": "ногу",
+          "grammemes": {"case": "Acc", "number": "Sing"},
+          "stressed": {"uppercase": "нОгу", "combining": "но\u0301гу"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "ногУ", "combining": "ногу\u0301"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0024",
+      "lemma": "голова",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0024-01",
+          "form": "голова",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "головА", "combining": "голова\u0301"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "голОва", "combining": "голо\u0301ва"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0024-02",
+          "form": "голови",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "головИ", "combining": "голови\u0301"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "гОлови", "combining": "го\u0301лови"}, {"uppercase": "голОви", "combining": "голо\u0301ви"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля"]
+          },
+          "example": "З голови\u0301 не йде."
+        },
+        {
+          "id": "uk-0024-03",
+          "form": "голови",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "гОлови", "combining": "го\u0301лови"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "головИ", "combining": "голови\u0301"}, {"uppercase": "голОви", "combining": "голо\u0301ви"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі"]
+          },
+          "example": "Дві го\u0301лови краще, ніж одна."
+        },
+        {
+          "id": "uk-0024-04",
+          "form": "голову",
+          "grammemes": {"case": "Acc", "number": "Sing"},
+          "stressed": {"uppercase": "гОлову", "combining": "го\u0301лову"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "головУ", "combining": "голову\u0301"}, {"uppercase": "голОву", "combining": "голо\u0301ву"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0025",
+      "lemma": "сторона",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0025-01",
+          "form": "сторона",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "сторонА", "combining": "сторона\u0301"},
+          "stress_char_index": 6,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [
+            {"uppercase": "стОрона", "combining": "сто\u0301рона"},
+            {"uppercase": "сторОна", "combining": "сторо\u0301на"}
+          ],
+          "homograph": false
+        },
+        {
+          "id": "uk-0025-02",
+          "form": "сторони",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "сторонИ", "combining": "сторони\u0301"},
+          "stress_char_index": 6,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [
+            {"uppercase": "стОрони", "combining": "сто\u0301рони"},
+            {"uppercase": "сторОни", "combining": "сторо\u0301ни"}
+          ],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "кожної", "іншої", "протилежної"]
+          }
+        },
+        {
+          "id": "uk-0025-03",
+          "form": "сторони",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "стОрони", "combining": "сто\u0301рони"},
+          "stress_char_index": 2,
+          "stress_syllable": 1,
+          "syllable_count": 3,
+          "incorrect_variants": [
+            {"uppercase": "сторонИ", "combining": "сторони\u0301"},
+            {"uppercase": "сторОни", "combining": "сторо\u0301ни"}
+          ],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "обидві", "сторони"]
+          },
+          "example": "Обидві сто\u0301рони погодилися."
+        },
+        {
+          "id": "uk-0025-04",
+          "form": "сторону",
+          "grammemes": {"case": "Acc", "number": "Sing"},
+          "stressed": {"uppercase": "стОрону", "combining": "сто\u0301рону"},
+          "stress_char_index": 2,
+          "stress_syllable": 1,
+          "syllable_count": 3,
+          "incorrect_variants": [
+            {"uppercase": "сторонУ", "combining": "сторону\u0301"},
+            {"uppercase": "сторОну", "combining": "сторо\u0301ну"}
+          ],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0026",
+      "lemma": "зима",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0026-01",
+          "form": "зима",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "зимА", "combining": "зима\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "зИма", "combining": "зи\u0301ма"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0026-02",
+          "form": "зими",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "зимИ", "combining": "зими\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "зИми", "combining": "зи\u0301ми"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "цієї", "минулої", "наступної"]
+          },
+          "example": "Чекаємо зими\u0301."
+        },
+        {
+          "id": "uk-0026-03",
+          "form": "зими",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "зИми", "combining": "зи\u0301ми"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "зимИ", "combining": "зими\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "холодні", "сніжні", "теплі"]
+          },
+          "example": "Останні зи\u0301ми теплі."
+        },
+        {
+          "id": "uk-0026-04",
+          "form": "зиму",
+          "grammemes": {"case": "Acc", "number": "Sing"},
+          "stressed": {"uppercase": "зИму", "combining": "зи\u0301му"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "зимУ", "combining": "зиму\u0301"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0027",
+      "lemma": "весна",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0027-01",
+          "form": "весна",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "веснА", "combining": "весна\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "вЕсна", "combining": "ве\u0301сна"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0027-02",
+          "form": "весни",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "веснИ", "combining": "весни\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "вЕсни", "combining": "ве\u0301сни"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "цієї", "минулої", "наступної"]
+          },
+          "example": "До весни\u0301 ще далеко."
+        },
+        {
+          "id": "uk-0027-03",
+          "form": "весни",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "вЕсни", "combining": "ве\u0301сни"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "веснИ", "combining": "весни\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "ранні", "пізні"]
+          }
+        }
+      ]
+    },
+    {
+      "id": "uk-0028",
+      "lemma": "ціна",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0028-01",
+          "form": "ціна",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "цінА", "combining": "ціна\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "цІна", "combining": "ці\u0301на"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0028-02",
+          "form": "ціни",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "цінИ", "combining": "ціни\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "цІни", "combining": "ці\u0301ни"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "зниження", "зростання", "половини"]
+          },
+          "example": "Зниження ціни\u0301."
+        },
+        {
+          "id": "uk-0028-03",
+          "form": "ціни",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "цІни", "combining": "ці\u0301ни"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "цінИ", "combining": "ціни\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "високі", "низькі", "нові", "ринкові"]
+          },
+          "example": "Ці\u0301ни зросли."
+        }
+      ]
+    },
+    {
+      "id": "uk-0029",
+      "lemma": "вікно",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0029-01",
+          "form": "вікна",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "вікнА", "combining": "вікна\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "вІкна", "combining": "ві\u0301кна"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "біля"]
+          }
+        },
+        {
+          "id": "uk-0029-02",
+          "form": "вікна",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "вІкна", "combining": "ві\u0301кна"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "вікнА", "combining": "вікна\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "пластикові", "відчиніть"]
+          },
+          "example": "Відчиніть ві\u0301кна."
+        }
+      ]
+    },
+    {
+      "id": "uk-0030",
+      "lemma": "село",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0030-01",
+          "form": "села",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "селА", "combining": "села\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "сЕла", "combining": "се\u0301ла"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "рідного", "нашого", "мешканці"]
+          },
+          "example": "Мешканці села\u0301."
+        },
+        {
+          "id": "uk-0030-02",
+          "form": "села",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "сЕла", "combining": "се\u0301ла"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "селА", "combining": "села\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "сусідні", "українські", "навколишні"]
+          },
+          "example": "Сусідні се\u0301ла."
+        }
+      ]
+    },
+    {
+      "id": "uk-0031",
+      "lemma": "місто",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0031-01",
+          "form": "міста",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "мІста", "combining": "мі\u0301ста"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "містА", "combining": "міста\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "центр", "мер", "мешканці", "рідного"]
+          },
+          "example": "Центр мі\u0301ста."
+        },
+        {
+          "id": "uk-0031-02",
+          "form": "міста",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "містА", "combining": "міста\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "мІста", "combining": "мі\u0301ста"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "великі", "українські", "обласні"]
+          },
+          "example": "Великі міста\u0301."
+        }
+      ]
+    },
+    {
+      "id": "uk-0032",
+      "lemma": "слово",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0032-01",
+          "form": "слова",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "слОва", "combining": "сло\u0301ва"},
+          "stress_char_index": 2,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "словА", "combining": "слова\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "значення", "без", "жодного", "одного"]
+          },
+          "example": "Без жодного сло\u0301ва."
+        },
+        {
+          "id": "uk-0032-02",
+          "form": "слова",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "словА", "combining": "слова\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "слОва", "combining": "сло\u0301ва"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "нові", "ці", "ваші", "прості"]
+          },
+          "example": "Ці слова\u0301 важливі."
+        }
+      ]
+    },
+    {
+      "id": "uk-0033",
+      "lemma": "поле",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0033-01",
+          "form": "поля",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "пОля", "combining": "по\u0301ля"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "полЯ", "combining": "поля\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "краю", "посеред", "середини"]
+          },
+          "example": "Посеред по\u0301ля."
+        },
+        {
+          "id": "uk-0033-02",
+          "form": "поля",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "полЯ", "combining": "поля\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "пОля", "combining": "по\u0301ля"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "пшеничні", "безкраї", "обов'язкові"]
+          },
+          "example": "Пшеничні поля\u0301."
+        }
+      ]
+    },
+    {
+      "id": "uk-0034",
+      "lemma": "море",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0034-01",
+          "form": "моря",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "мОря", "combining": "мо\u0301ря"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "морЯ", "combining": "моря\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": [
+              "без",
+              "до",
+              "для",
+              "від",
+              "з",
+              "із",
+              "у",
+              "біля",
+              "берег",
+              "рівень",
+              "біля",
+              "Чорного",
+              "Азовського"
+            ]
+          },
+          "example": "Берег мо\u0301ря."
+        },
+        {
+          "id": "uk-0034-02",
+          "form": "моря",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "морЯ", "combining": "моря\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "мОря", "combining": "мо\u0301ря"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "теплі", "південні"]
+          },
+          "example": "Теплі моря\u0301."
+        }
+      ]
+    },
+    {
+      "id": "uk-0035",
+      "lemma": "озеро",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0035-01",
+          "form": "озера",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "Озера", "combining": "о\u0301зера"},
+          "stress_char_index": 0,
+          "stress_syllable": 1,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "озЕра", "combining": "озе\u0301ра"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "берег", "біля", "посеред"]
+          },
+          "example": "Біля о\u0301зера."
+        },
+        {
+          "id": "uk-0035-02",
+          "form": "озера",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "озЕра", "combining": "озе\u0301ра"},
+          "stress_char_index": 2,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "Озера", "combining": "о\u0301зера"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "Шацькі", "гірські", "чисті"]
+          },
+          "example": "Шацькі озе\u0301ра."
+        }
+      ]
+    },
+    {
+      "id": "uk-0036",
+      "lemma": "дерево",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0036-01",
+          "form": "дерева",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "дЕрева", "combining": "де\u0301рева"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "дерЕва", "combining": "дере\u0301ва"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "біля", "з", "під", "гілка"]
+          },
+          "example": "Під де\u0301рева."
+        },
+        {
+          "id": "uk-0036-02",
+          "form": "дерева",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "дерЕва", "combining": "дере\u0301ва"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "дЕрева", "combining": "де\u0301рева"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "старі", "високі", "фруктові"]
+          },
+          "example": "Старі дере\u0301ва."
+        }
+      ]
+    },
+    {
+      "id": "uk-0037",
+      "lemma": "серце",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0037-01",
+          "form": "серця",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "сЕрця", "combining": "се\u0301рця"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "серцЯ", "combining": "серця\u0301"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["без", "до", "для", "від", "з", "із", "у", "біля", "від", "з", "глибини", "щирого"]
+          },
+          "example": "Від щирого се\u0301рця."
+        },
+        {
+          "id": "uk-0037-02",
+          "form": "серця",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "серцЯ", "combining": "серця\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "сЕрця", "combining": "се\u0301рця"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "grammemes",
+            "preceding_tokens": ["дві", "три", "чотири", "мої", "наші", "усі", "всі", "наші", "людські"]
+          },
+          "example": "Наші серця\u0301 з вами."
+        }
+      ]
+    },
+    {
+      "id": "uk-0038",
+      "lemma": "міст",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0038-01",
+          "form": "моста",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "мостА", "combining": "моста\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "мОста", "combining": "мо\u0301ста"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0038-02",
+          "form": "мости",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "мостИ", "combining": "мости\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "мОсти", "combining": "мо\u0301сти"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0039",
+      "lemma": "кіт",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0039-01",
+          "form": "кота",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "котА", "combining": "кота\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "кОта", "combining": "ко\u0301та"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0039-02",
+          "form": "коти",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "котИ", "combining": "коти\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "кОти", "combining": "ко\u0301ти"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0040",
+      "lemma": "кінь",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0040-01",
+          "form": "коня",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "конЯ", "combining": "коня\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "кОня", "combining": "ко\u0301ня"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0040-02",
+          "form": "коні",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "кОні", "combining": "ко\u0301ні"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "конІ", "combining": "коні\u0301"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0041",
+      "lemma": "дуб",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0041-01",
+          "form": "дуба",
+          "grammemes": {"case": "Gen", "number": "Sing"},
+          "stressed": {"uppercase": "дУба", "combining": "ду\u0301ба"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "дубА", "combining": "дуба\u0301"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0041-02",
+          "form": "дуби",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "дубИ", "combining": "дуби\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "дУби", "combining": "ду\u0301би"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0042",
+      "lemma": "вірш",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0042-01",
+          "form": "вірші",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "віршІ", "combining": "вірші\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "вІрші", "combining": "ві\u0301рші"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0043",
+      "lemma": "брат",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0043-01",
+          "form": "брати",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "братИ", "combining": "брати\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "брАти", "combining": "бра\u0301ти"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "pos",
+            "preceding_tokens": ["мої", "рідні", "двоюрідні", "старші", "два", "три"]
+          },
+          "example": "Мої брати\u0301 служать."
+        }
+      ]
+    },
+    {
+      "id": "uk-0044",
+      "lemma": "ремінь",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0044-01",
+          "form": "ремінь",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "ремІнь", "combining": "ремі\u0301нь"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "рЕмінь", "combining": "ре\u0301мінь"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0045",
+      "lemma": "замок",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0045-01",
+          "form": "замок",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "sense": "castle",
+          "stressed": {"uppercase": "зАмок", "combining": "за\u0301мок"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "замОк", "combining": "замо\u0301к"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "sense",
+            "preceding_tokens": ["середньовічний", "старовинний", "Луцький", "Олеський", "король"]
+          },
+          "example": "Старовинний за\u0301мок."
+        }
+      ]
+    },
+    {
+      "id": "uk-0046",
+      "lemma": "замок",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0046-01",
+          "form": "замок",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "sense": "lock",
+          "stressed": {"uppercase": "замОк", "combining": "замо\u0301к"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "зАмок", "combining": "за\u0301мок"}],
+          "homograph": true,
+          "context_hints": {"disambiguate_by": "sense", "preceding_tokens": ["дверний", "навісний", "кодовий", "ключ"]},
+          "example": "Дверний замо\u0301к."
+        }
+      ]
+    },
+    {
+      "id": "uk-0047",
+      "lemma": "атлас",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0047-01",
+          "form": "атлас",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "sense": "book_of_maps",
+          "stressed": {"uppercase": "Атлас", "combining": "а\u0301тлас"},
+          "stress_char_index": 0,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "атлАс", "combining": "атла\u0301с"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "sense",
+            "preceding_tokens": ["географічний", "анатомічний", "шкільний", "світу"]
+          },
+          "example": "Географічний а\u0301тлас."
+        }
+      ]
+    },
+    {
+      "id": "uk-0048",
+      "lemma": "атлас",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0048-01",
+          "form": "атлас",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "sense": "satin_fabric",
+          "stressed": {"uppercase": "атлАс", "combining": "атла\u0301с"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "Атлас", "combining": "а\u0301тлас"}],
+          "homograph": true,
+          "context_hints": {"disambiguate_by": "sense", "preceding_tokens": ["шовковий", "блискучий", "тканина", "сукня"]},
+          "example": "Шовковий атла\u0301с."
+        }
+      ]
+    },
+    {
+      "id": "uk-0049",
+      "lemma": "орган",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0049-01",
+          "form": "орган",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "sense": "body_part_or_institution",
+          "stressed": {"uppercase": "Орган", "combining": "о\u0301рган"},
+          "stress_char_index": 0,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "оргАн", "combining": "орга\u0301н"}],
+          "homograph": true,
+          "context_hints": {
+            "disambiguate_by": "sense",
+            "preceding_tokens": ["державний", "виконавчий", "внутрішній", "контролюючий"]
+          },
+          "example": "Державний о\u0301рган."
+        }
+      ]
+    },
+    {
+      "id": "uk-0050",
+      "lemma": "орган",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0050-01",
+          "form": "орган",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "sense": "musical_instrument",
+          "stressed": {"uppercase": "оргАн", "combining": "орга\u0301н"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "Орган", "combining": "о\u0301рган"}],
+          "homograph": true,
+          "context_hints": {"disambiguate_by": "sense", "preceding_tokens": ["грати", "музика", "концерт", "органний"]},
+          "example": "Звучить орга\u0301н."
+        }
+      ]
+    },
+    {
+      "id": "uk-0051",
+      "lemma": "мука",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0051-01",
+          "form": "мука",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "sense": "torment",
+          "stressed": {"uppercase": "мУка", "combining": "му\u0301ка"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "мукА", "combining": "мука\u0301"}],
+          "homograph": true,
+          "context_hints": {"disambiguate_by": "sense", "preceding_tokens": ["справжня", "нестерпна", "душевна"]},
+          "example": "Це справжня му\u0301ка."
+        }
+      ]
+    },
+    {
+      "id": "uk-0052",
+      "lemma": "мука",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0052-01",
+          "form": "мука",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "sense": "flour",
+          "stressed": {"uppercase": "мукА", "combining": "мука\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "мУка", "combining": "му\u0301ка"}],
+          "homograph": true,
+          "context_hints": {"disambiguate_by": "sense", "preceding_tokens": ["пшенична", "житня", "кілограм", "мішок"]},
+          "example": "Пшенична мука\u0301."
+        }
+      ]
+    },
+    {
+      "id": "uk-0053",
+      "lemma": "алфавіт",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0053-01",
+          "form": "алфавіт",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "алфавІт", "combining": "алфаві\u0301т"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "алфАвіт", "combining": "алфа\u0301віт"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0054",
+      "lemma": "безпека",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0054-01",
+          "form": "безпека",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "безпЕка", "combining": "безпе\u0301ка"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "бЕзпека", "combining": "бе\u0301зпека"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0055",
+      "lemma": "подруга",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0055-01",
+          "form": "подруга",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "пОдруга", "combining": "по\u0301друга"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "подрУга", "combining": "подру\u0301га"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0056",
+      "lemma": "обіцянка",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0056-01",
+          "form": "обіцянка",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "обІцянка", "combining": "обі\u0301цянка"},
+          "stress_char_index": 2,
+          "stress_syllable": 2,
+          "syllable_count": 4,
+          "incorrect_variants": [{"uppercase": "обіцЯнка", "combining": "обіця\u0301нка"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0057",
+      "lemma": "розповідь",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0057-01",
+          "form": "розповідь",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "рОзповідь", "combining": "ро\u0301зповідь"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "розпОвідь", "combining": "розпо\u0301відь"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0058",
+      "lemma": "ознака",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0058-01",
+          "form": "ознака",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "ознАка", "combining": "озна\u0301ка"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "Ознака", "combining": "о\u0301знака"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0059",
+      "lemma": "статуя",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0059-01",
+          "form": "статуя",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "статУя", "combining": "стату\u0301я"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "стАтуя", "combining": "ста\u0301туя"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0060",
+      "lemma": "симетрія",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Fem"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0060-01",
+          "form": "симетрія",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "симетрІя", "combining": "симетрі\u0301я"},
+          "stress_char_index": 6,
+          "stress_syllable": 3,
+          "syllable_count": 4,
+          "incorrect_variants": [{"uppercase": "симЕтрія", "combining": "симе\u0301трія"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0061",
+      "lemma": "феномен",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0061-01",
+          "form": "феномен",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "фенОмен", "combining": "фено\u0301мен"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "феномЕн", "combining": "феноме\u0301н"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0062",
+      "lemma": "псевдонім",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0062-01",
+          "form": "псевдонім",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "псевдОнім", "combining": "псевдо\u0301нім"},
+          "stress_char_index": 5,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "псевдонІм", "combining": "псевдоні\u0301м"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0063",
+      "lemma": "партер",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0063-01",
+          "form": "партер",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "партЕр", "combining": "парте\u0301р"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "пАртер", "combining": "па\u0301ртер"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0064",
+      "lemma": "доцент",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0064-01",
+          "form": "доцент",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "доцЕнт", "combining": "доце\u0301нт"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "дОцент", "combining": "до\u0301цент"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0065",
+      "lemma": "квартал",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0065-01",
+          "form": "квартал",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "квартАл", "combining": "кварта\u0301л"},
+          "stress_char_index": 5,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "квАртал", "combining": "ква\u0301ртал"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0066",
+      "lemma": "діалог",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0066-01",
+          "form": "діалог",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "діалОг", "combining": "діало\u0301г"},
+          "stress_char_index": 4,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "діАлог", "combining": "діа\u0301лог"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0067",
+      "lemma": "інструмент",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0067-01",
+          "form": "інструмент",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "інструмЕнт", "combining": "інструме\u0301нт"},
+          "stress_char_index": 7,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "інстрУмент", "combining": "інстру\u0301мент"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0068",
+      "lemma": "цемент",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0068-01",
+          "form": "цемент",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "цемЕнт", "combining": "цеме\u0301нт"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "цЕмент", "combining": "це\u0301мент"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0069",
+      "lemma": "листопад",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0069-01",
+          "form": "листопад",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "листопАд", "combining": "листопа\u0301д"},
+          "stress_char_index": 6,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "лИстопад", "combining": "ли\u0301стопад"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0070",
+      "lemma": "оцет",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0070-01",
+          "form": "оцет",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "Оцет", "combining": "о\u0301цет"},
+          "stress_char_index": 0,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "оцЕт", "combining": "оце\u0301т"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0071",
+      "lemma": "джерело",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0071-01",
+          "form": "джерело",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "джерелО", "combining": "джерело\u0301"},
+          "stress_char_index": 6,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "джерЕло", "combining": "джере\u0301ло"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0071-02",
+          "form": "джерела",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "джерЕла", "combining": "джере\u0301ла"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "джерелА", "combining": "джерела\u0301"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0072",
+      "lemma": "щеня",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0072-01",
+          "form": "щеня",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "щенЯ", "combining": "щеня\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "щЕня", "combining": "ще\u0301ня"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0073",
+      "lemma": "завдання",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0073-01",
+          "form": "завдання",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "завдАння", "combining": "завда\u0301ння"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "зАвдання", "combining": "за\u0301вдання"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0074",
+      "lemma": "запитання",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0074-01",
+          "form": "запитання",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "запитАння", "combining": "запита\u0301ння"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 4,
+          "incorrect_variants": [
+            {"uppercase": "зАпитання", "combining": "за\u0301питання"},
+            {"uppercase": "запИтання", "combining": "запи\u0301тання"}
+          ],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0075",
+      "lemma": "закінчення",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0075-01",
+          "form": "закінчення",
+          "grammemes": {"case": "Nom", "number": "Sing"},
+          "stressed": {"uppercase": "закІнчення", "combining": "закі\u0301нчення"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 4,
+          "incorrect_variants": [{"uppercase": "закінчЕння", "combining": "закінче\u0301ння"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0076",
+      "lemma": "жалюзі",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Neut"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0076-01",
+          "form": "жалюзі",
+          "grammemes": {},
+          "stressed": {"uppercase": "жалюзІ", "combining": "жалюзі\u0301"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "жАлюзі", "combining": "жа\u0301люзі"}, {"uppercase": "жалЮзі", "combining": "жалю\u0301зі"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0077",
+      "lemma": "дрова",
+      "pos": "NOUN",
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0077-01",
+          "form": "дрова",
+          "grammemes": {"case": "Nom", "number": "Ptan"},
+          "stressed": {"uppercase": "дровА", "combining": "дрова\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "дрОва", "combining": "дро\u0301ва"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0078",
+      "lemma": "чорнобривець",
+      "pos": "NOUN",
+      "lemma_features": {"gender": "Masc"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0078-01",
+          "form": "чорнобривці",
+          "grammemes": {"case": "Nom", "number": "Plur"},
+          "stressed": {"uppercase": "чорнобрИвці", "combining": "чорнобри\u0301вці"},
+          "stress_char_index": 7,
+          "stress_syllable": 3,
+          "syllable_count": 4,
+          "incorrect_variants": [
+            {"uppercase": "чорнобривцІ", "combining": "чорнобривці\u0301"},
+            {"uppercase": "чОрнобривці", "combining": "чо\u0301рнобривці"}
+          ],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0079",
+      "lemma": "взяти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0079-01",
+          "form": "взяла",
+          "grammemes": {"verb_form": "Fin", "tense": "Past", "gender": "Fem", "number": "Sing"},
+          "stressed": {"uppercase": "взялА", "combining": "взяла\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "взЯла", "combining": "взя\u0301ла"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0079-02",
+          "form": "взяли",
+          "grammemes": {"verb_form": "Fin", "tense": "Past", "number": "Plur"},
+          "stressed": {"uppercase": "взялИ", "combining": "взяли\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "взЯли", "combining": "взя\u0301ли"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0080",
+      "lemma": "почати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0080-01",
+          "form": "почала",
+          "grammemes": {"verb_form": "Fin", "tense": "Past", "gender": "Fem", "number": "Sing"},
+          "stressed": {"uppercase": "почалА", "combining": "почала\u0301"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "пОчала", "combining": "по\u0301чала"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0080-02",
+          "form": "почали",
+          "grammemes": {"verb_form": "Fin", "tense": "Past", "number": "Plur"},
+          "stressed": {"uppercase": "почалИ", "combining": "почали\u0301"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "пОчали", "combining": "по\u0301чали"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0081",
+      "lemma": "жити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0081-01",
+          "form": "жила",
+          "grammemes": {"verb_form": "Fin", "tense": "Past", "gender": "Fem", "number": "Sing"},
+          "stressed": {"uppercase": "жилА", "combining": "жила\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "жИла", "combining": "жи\u0301ла"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0081-02",
+          "form": "жили",
+          "grammemes": {"verb_form": "Fin", "tense": "Past", "number": "Plur"},
+          "stressed": {"uppercase": "жилИ", "combining": "жили\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "жИли", "combining": "жи\u0301ли"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0082",
+      "lemma": "дати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0082-01",
+          "form": "дала",
+          "grammemes": {"verb_form": "Fin", "tense": "Past", "gender": "Fem", "number": "Sing"},
+          "stressed": {"uppercase": "далА", "combining": "дала\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "дАла", "combining": "да\u0301ла"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0082-02",
+          "form": "дали",
+          "grammemes": {"verb_form": "Fin", "tense": "Past", "number": "Plur"},
+          "stressed": {"uppercase": "далИ", "combining": "дали\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "дАли", "combining": "да\u0301ли"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0083",
+      "lemma": "брати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0083-01",
+          "form": "брати",
+          "grammemes": {"verb_form": "Inf"},
+          "stressed": {"uppercase": "брАти", "combining": "бра\u0301ти"},
+          "stress_char_index": 2,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "братИ", "combining": "брати\u0301"}],
+          "homograph": true,
+          "context_hints": {"disambiguate_by": "pos", "preceding_tokens": ["треба", "можна", "не", "почав", "буду"]},
+          "example": "Не треба бра\u0301ти чужого."
+        }
+      ]
+    },
+    {
+      "id": "uk-0084",
+      "lemma": "принести",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0084-01",
+          "form": "принести",
+          "grammemes": {"verb_form": "Inf"},
+          "stressed": {"uppercase": "принестИ", "combining": "принести\u0301"},
+          "stress_char_index": 7,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "принЕсти", "combining": "прине\u0301сти"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0085",
+      "lemma": "ненавидіти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0085-01",
+          "form": "ненавидіти",
+          "grammemes": {"verb_form": "Inf"},
+          "stressed": {"uppercase": "ненавИдіти", "combining": "ненави\u0301діти"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 5,
+          "incorrect_variants": [{"uppercase": "ненавидІти", "combining": "ненавиді\u0301ти"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0086",
+      "lemma": "вимагати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0086-01",
+          "form": "вимагати",
+          "grammemes": {"verb_form": "Inf"},
+          "stressed": {"uppercase": "вимагАти", "combining": "вимага\u0301ти"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 4,
+          "incorrect_variants": [{"uppercase": "вимАгати", "combining": "вима\u0301гати"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0087",
+      "lemma": "виходити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0087-01",
+          "form": "виходити",
+          "grammemes": {"verb_form": "Inf"},
+          "stressed": {"uppercase": "вихОдити", "combining": "вихо\u0301дити"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 4,
+          "incorrect_variants": [{"uppercase": "вИходити", "combining": "ви\u0301ходити"}],
+          "homograph": true,
+          "context_hints": {"disambiguate_by": "aspect", "preceding_tokens": ["треба", "час", "не", "почав"]},
+          "example": "Час вихо\u0301дити."
+        }
+      ]
+    },
+    {
+      "id": "uk-0088",
+      "lemma": "виходити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Perf"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0088-01",
+          "form": "виходити",
+          "grammemes": {"verb_form": "Inf"},
+          "stressed": {"uppercase": "вИходити", "combining": "ви\u0301ходити"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 4,
+          "incorrect_variants": [{"uppercase": "вихОдити", "combining": "вихо\u0301дити"}],
+          "homograph": true,
+          "context_hints": {"disambiguate_by": "aspect", "preceding_tokens": ["хворого", "пораненого", "зміг", "встигли"]},
+          "example": "Зміг ви\u0301ходити пораненого птаха."
+        }
+      ]
+    },
+    {
+      "id": "uk-0089",
+      "lemma": "ходити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0089-01",
+          "form": "ходжу",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "1", "number": "Sing"},
+          "stressed": {"uppercase": "ходжУ", "combining": "ходжу\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "хОджу", "combining": "хо\u0301джу"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0089-02",
+          "form": "ходиш",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "2", "number": "Sing"},
+          "stressed": {"uppercase": "хОдиш", "combining": "хо\u0301диш"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "ходИш", "combining": "ходи\u0301ш"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0090",
+      "lemma": "носити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0090-01",
+          "form": "ношу",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "1", "number": "Sing"},
+          "stressed": {"uppercase": "ношУ", "combining": "ношу\u0301"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "нОшу", "combining": "но\u0301шу"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0090-02",
+          "form": "носиш",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "2", "number": "Sing"},
+          "stressed": {"uppercase": "нОсиш", "combining": "но\u0301сиш"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "носИш", "combining": "носи\u0301ш"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0091",
+      "lemma": "просити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0091-01",
+          "form": "прошу",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "1", "number": "Sing"},
+          "stressed": {"uppercase": "прошУ", "combining": "прошу\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "прОшу", "combining": "про\u0301шу"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0091-02",
+          "form": "просиш",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "2", "number": "Sing"},
+          "stressed": {"uppercase": "прОсиш", "combining": "про\u0301сиш"},
+          "stress_char_index": 2,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "просИш", "combining": "проси\u0301ш"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0092",
+      "lemma": "любити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0092-01",
+          "form": "люблю",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "1", "number": "Sing"},
+          "stressed": {"uppercase": "люблЮ", "combining": "люблю\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "лЮблю", "combining": "лю\u0301блю"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0092-02",
+          "form": "любиш",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "2", "number": "Sing"},
+          "stressed": {"uppercase": "лЮбиш", "combining": "лю\u0301биш"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "любИш", "combining": "люби\u0301ш"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0093",
+      "lemma": "робити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0093-01",
+          "form": "роблю",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "1", "number": "Sing"},
+          "stressed": {"uppercase": "роблЮ", "combining": "роблю\u0301"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "рОблю", "combining": "ро\u0301блю"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0093-02",
+          "form": "робиш",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "2", "number": "Sing"},
+          "stressed": {"uppercase": "рОбиш", "combining": "ро\u0301биш"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "робИш", "combining": "роби\u0301ш"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0094",
+      "lemma": "говорити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0094-01",
+          "form": "говорю",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "1", "number": "Sing"},
+          "stressed": {"uppercase": "говорЮ", "combining": "говорю\u0301"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "говОрю", "combining": "гово\u0301рю"}],
+          "homograph": false
+        },
+        {
+          "id": "uk-0094-02",
+          "form": "говориш",
+          "grammemes": {"verb_form": "Fin", "tense": "Pres", "person": "2", "number": "Sing"},
+          "stressed": {"uppercase": "говОриш", "combining": "гово\u0301риш"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "говорИш", "combining": "говори\u0301ш"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0095",
+      "lemma": "новий",
+      "pos": "ADJ",
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0095-01",
+          "form": "новий",
+          "grammemes": {"case": "Nom", "number": "Sing", "gender": "Masc"},
+          "stressed": {"uppercase": "новИй", "combining": "нови\u0301й"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "нОвий", "combining": "но\u0301вий"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0096",
+      "lemma": "молодий",
+      "pos": "ADJ",
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0096-01",
+          "form": "молодий",
+          "grammemes": {"case": "Nom", "number": "Sing", "gender": "Masc"},
+          "stressed": {"uppercase": "молодИй", "combining": "молоди\u0301й"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "молОдий", "combining": "моло\u0301дий"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0097",
+      "lemma": "дорогий",
+      "pos": "ADJ",
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0097-01",
+          "form": "дорогий",
+          "grammemes": {"case": "Nom", "number": "Sing", "gender": "Masc"},
+          "stressed": {"uppercase": "дорогИй", "combining": "дороги\u0301й"},
+          "stress_char_index": 5,
+          "stress_syllable": 3,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "дорОгий", "combining": "доро\u0301гий"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0098",
+      "lemma": "чужий",
+      "pos": "ADJ",
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0098-01",
+          "form": "чужий",
+          "grammemes": {"case": "Nom", "number": "Sing", "gender": "Masc"},
+          "stressed": {"uppercase": "чужИй", "combining": "чужи\u0301й"},
+          "stress_char_index": 3,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "чУжий", "combining": "чу\u0301жий"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0099",
+      "lemma": "гіркий",
+      "pos": "ADJ",
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0099-01",
+          "form": "гіркий",
+          "grammemes": {"case": "Nom", "number": "Sing", "gender": "Masc"},
+          "stressed": {"uppercase": "гіркИй", "combining": "гірки\u0301й"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "гІркий", "combining": "гі\u0301ркий"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0100",
+      "lemma": "зручний",
+      "pos": "ADJ",
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0100-01",
+          "form": "зручний",
+          "grammemes": {"case": "Nom", "number": "Sing", "gender": "Masc"},
+          "stressed": {"uppercase": "зручнИй", "combining": "зручни\u0301й"},
+          "stress_char_index": 5,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "зрУчний", "combining": "зру\u0301чний"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0101",
+      "lemma": "урочистий",
+      "pos": "ADJ",
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0101-01",
+          "form": "урочистий",
+          "grammemes": {"case": "Nom", "number": "Sing", "gender": "Masc"},
+          "stressed": {"uppercase": "урочИстий", "combining": "урочи\u0301стий"},
+          "stress_char_index": 4,
+          "stress_syllable": 3,
+          "syllable_count": 4,
+          "incorrect_variants": [{"uppercase": "урОчистий", "combining": "уро\u0301чистий"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0102",
+      "lemma": "який",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Int,Rel"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0102-01",
+          "form": "який",
+          "grammemes": {"case": "Nom", "number": "Sing", "gender": "Masc"},
+          "stressed": {"uppercase": "якИй", "combining": "яки\u0301й"},
+          "stress_char_index": 2,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "Який", "combining": "я\u0301кий"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0103",
+      "lemma": "котрий",
+      "pos": "DET",
+      "lemma_features": {"pron_type": "Int,Rel"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0103-01",
+          "form": "котрий",
+          "grammemes": {"case": "Nom", "number": "Sing", "gender": "Masc"},
+          "stressed": {"uppercase": "котрИй", "combining": "котри\u0301й"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "кОтрий", "combining": "ко\u0301трий"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0104",
+      "lemma": "дванадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0104-01",
+          "form": "дванадцять",
+          "grammemes": {"case": "Nom"},
+          "stressed": {"uppercase": "дванАдцять", "combining": "двана\u0301дцять"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "двАнадцять", "combining": "два\u0301надцять"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0105",
+      "lemma": "тринадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0105-01",
+          "form": "тринадцять",
+          "grammemes": {"case": "Nom"},
+          "stressed": {"uppercase": "тринАдцять", "combining": "трина\u0301дцять"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "трИнадцять", "combining": "три\u0301надцять"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0106",
+      "lemma": "п'ятнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0106-01",
+          "form": "п'ятнадцять",
+          "grammemes": {"case": "Nom"},
+          "stressed": {"uppercase": "п'ятнАдцять", "combining": "п'ятна\u0301дцять"},
+          "stress_char_index": 5,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "п'Ятнадцять", "combining": "п'я\u0301тнадцять"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0107",
+      "lemma": "шістнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0107-01",
+          "form": "шістнадцять",
+          "grammemes": {"case": "Nom"},
+          "stressed": {"uppercase": "шістнАдцять", "combining": "шістна\u0301дцять"},
+          "stress_char_index": 5,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "шІстнадцять", "combining": "ші\u0301стнадцять"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0108",
+      "lemma": "сімнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0108-01",
+          "form": "сімнадцять",
+          "grammemes": {"case": "Nom"},
+          "stressed": {"uppercase": "сімнАдцять", "combining": "сімна\u0301дцять"},
+          "stress_char_index": 4,
+          "stress_syllable": 2,
+          "syllable_count": 3,
+          "incorrect_variants": [{"uppercase": "сІмнадцять", "combining": "сі\u0301мнадцять"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0109",
+      "lemma": "вісімнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0109-01",
+          "form": "вісімнадцять",
+          "grammemes": {"case": "Nom"},
+          "stressed": {"uppercase": "вісімнАдцять", "combining": "вісімна\u0301дцять"},
+          "stress_char_index": 6,
+          "stress_syllable": 3,
+          "syllable_count": 4,
+          "incorrect_variants": [
+            {"uppercase": "вІсімнадцять", "combining": "ві\u0301сімнадцять"},
+            {"uppercase": "вісІмнадцять", "combining": "вісі\u0301мнадцять"}
+          ],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0110",
+      "lemma": "дев'ятнадцять",
+      "pos": "NUM",
+      "lemma_features": {"num_type": "Card"},
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0110-01",
+          "form": "дев'ятнадцять",
+          "grammemes": {"case": "Nom"},
+          "stressed": {"uppercase": "дев'ятнАдцять", "combining": "дев'ятна\u0301дцять"},
+          "stress_char_index": 7,
+          "stress_syllable": 3,
+          "syllable_count": 4,
+          "incorrect_variants": [
+            {"uppercase": "дЕв'ятнадцять", "combining": "де\u0301в'ятнадцять"}
+          ],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0111",
+      "lemma": "разом",
+      "pos": "ADV",
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0111-01",
+          "form": "разом",
+          "grammemes": {},
+          "stressed": {"uppercase": "рАзом", "combining": "ра\u0301зом"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "разОм", "combining": "разо\u0301м"}],
+          "homograph": false
+        }
+      ]
+    },
+    {
+      "id": "uk-0112",
+      "lemma": "серед",
+      "pos": "ADP",
+      "status": "seed",
+      "wordforms": [
+        {
+          "id": "uk-0112-01",
+          "form": "серед",
+          "grammemes": {},
+          "stressed": {"uppercase": "сЕред", "combining": "се\u0301ред"},
+          "stress_char_index": 1,
+          "stress_syllable": 1,
+          "syllable_count": 2,
+          "incorrect_variants": [{"uppercase": "серЕд", "combining": "сере\u0301д"}],
           "homograph": false
         }
       ]
