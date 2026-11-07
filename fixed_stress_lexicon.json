@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "lexicon_version": "0.7.0",
+  "lexicon_version": "0.8.0",
   "language": "uk-UA",
   "name": "Ukrainian TTS Fixed-Stress Lemmas",
   "description": "Community-maintained list of Ukrainian lemmas whose stress never moves: in every wordform the stress falls on the same syllable. Companion to standard_lexicon.json, which lists individual wordforms (including mobile-stress paradigms and homographs).",
@@ -4144,7 +4144,8 @@
         {"uppercase": "мАю", "combining": "ма\u0301ю"},
         {"uppercase": "мАєш", "combining": "ма\u0301єш"},
         {"uppercase": "мАла", "combining": "ма\u0301ла"}
-      ]
+      ],
+      "note": "The form ма\u0301ю also exists as маю\u0301 (from маяти)."
     },
     {
       "id": "ukf-0319",
@@ -4399,7 +4400,8 @@
         {"uppercase": "плАчу", "combining": "пла\u0301чу"},
         {"uppercase": "плАчеш", "combining": "пла\u0301чеш"},
         {"uppercase": "плАкала", "combining": "пла\u0301кала"}
-      ]
+      ],
+      "note": "The form пла\u0301чу (плакати) coincides with плачу\u0301 (платити); resolve the lemma first."
     },
     {
       "id": "ukf-0334",
@@ -4450,7 +4452,8 @@
         {"uppercase": "чУю", "combining": "чу\u0301ю"},
         {"uppercase": "чУєш", "combining": "чу\u0301єш"},
         {"uppercase": "чУла", "combining": "чу\u0301ла"}
-      ]
+      ],
+      "note": "The reference dictionary also lists a rare reading чути\u0301."
     },
     {
       "id": "ukf-0337",
@@ -4786,7 +4789,8 @@
         {"uppercase": "вИграю", "combining": "ви\u0301граю"},
         {"uppercase": "вИграєш", "combining": "ви\u0301граєш"},
         {"uppercase": "вИграла", "combining": "ви\u0301грала"}
-      ]
+      ],
+      "note": "Future forms (ви\u0301граю, ви\u0301граєш...) coincide with present forms of вигравати (виграю\u0301, виграє\u0301ш); resolve the aspect first."
     },
     {
       "id": "ukf-0357",
@@ -11242,7 +11246,7 @@
       "pos": "VERB",
       "lemma_features": {"aspect": "Imp"},
       "paradigm": "conjugable",
-      "status": "seed",
+      "status": "deprecated",
       "stressed": {"uppercase": "давАти", "combining": "дава\u0301ти"},
       "stress_char_index": 3,
       "stress_syllable": 2,
@@ -11251,7 +11255,8 @@
         {"uppercase": "даЮ", "combining": "даю\u0301"},
         {"uppercase": "даЄш", "combining": "дає\u0301ш"},
         {"uppercase": "давАла", "combining": "дава\u0301ла"}
-      ]
+      ],
+      "note": "1pl/2pl present and the converb are stressed on the ending (даємо\u0301, даєте\u0301, даючи\u0301), so the stress is not fixed; see verb_paradigms.json."
     },
     {
       "id": "ukf-0871",
@@ -20098,7 +20103,8 @@
         {"uppercase": "заплАчу", "combining": "запла\u0301чу"},
         {"uppercase": "заплАчеш", "combining": "запла\u0301чеш"},
         {"uppercase": "заплАкала", "combining": "запла\u0301кала"}
-      ]
+      ],
+      "note": "The form запла\u0301чу (заплакати) coincides with заплачу\u0301 (заплатити); resolve the lemma first."
     },
     {
       "id": "ukf-1539",
@@ -28893,7 +28899,7 @@
       "pos": "VERB",
       "lemma_features": {"aspect": "Imp"},
       "paradigm": "conjugable",
-      "status": "seed",
+      "status": "deprecated",
       "stressed": {"uppercase": "додавАти", "combining": "додава\u0301ти"},
       "stress_char_index": 5,
       "stress_syllable": 3,
@@ -28902,7 +28908,8 @@
         {"uppercase": "додаЮ", "combining": "додаю\u0301"},
         {"uppercase": "додаЄш", "combining": "додає\u0301ш"},
         {"uppercase": "додавАла", "combining": "додава\u0301ла"}
-      ]
+      ],
+      "note": "1pl/2pl present and the converb are stressed on the ending (додаємо\u0301, додаєте\u0301, додаючи\u0301), so the stress is not fixed; see verb_paradigms.json."
     },
     {
       "id": "ukf-2247",
@@ -29280,7 +29287,7 @@
       "pos": "VERB",
       "lemma_features": {"aspect": "Imp"},
       "paradigm": "conjugable",
-      "status": "seed",
+      "status": "deprecated",
       "stressed": {"uppercase": "передавАти", "combining": "передава\u0301ти"},
       "stress_char_index": 7,
       "stress_syllable": 4,
@@ -29289,7 +29296,8 @@
         {"uppercase": "передаЮ", "combining": "передаю\u0301"},
         {"uppercase": "передаЄш", "combining": "передає\u0301ш"},
         {"uppercase": "передавАла", "combining": "передава\u0301ла"}
-      ]
+      ],
+      "note": "1pl/2pl present and the converb are stressed on the ending (передаємо\u0301, передаєте\u0301, передаючи\u0301), so the stress is not fixed; see verb_paradigms.json."
     },
     {
       "id": "ukf-2270",
@@ -29672,7 +29680,7 @@
       "pos": "VERB",
       "lemma_features": {"aspect": "Imp"},
       "paradigm": "conjugable",
-      "status": "seed",
+      "status": "deprecated",
       "stressed": {"uppercase": "ставАти", "combining": "става\u0301ти"},
       "stress_char_index": 4,
       "stress_syllable": 2,
@@ -29681,7 +29689,8 @@
         {"uppercase": "стаЮ", "combining": "стаю\u0301"},
         {"uppercase": "стаЄш", "combining": "стає\u0301ш"},
         {"uppercase": "ставАла", "combining": "става\u0301ла"}
-      ]
+      ],
+      "note": "1pl/2pl present and the converb are stressed on the ending (стаємо\u0301, стаєте\u0301, стаючи\u0301), so the stress is not fixed; see verb_paradigms.json."
     },
     {
       "id": "ukf-2293",
@@ -38252,7 +38261,7 @@
       "pos": "VERB",
       "lemma_features": {"aspect": "Imp"},
       "paradigm": "conjugable",
-      "status": "seed",
+      "status": "deprecated",
       "stressed": {"uppercase": "подавАти", "combining": "подава\u0301ти"},
       "stress_char_index": 5,
       "stress_syllable": 3,
@@ -38261,7 +38270,8 @@
         {"uppercase": "подаЮ", "combining": "подаю\u0301"},
         {"uppercase": "подаЄш", "combining": "подає\u0301ш"},
         {"uppercase": "подавАла", "combining": "подава\u0301ла"}
-      ]
+      ],
+      "note": "1pl/2pl present and the converb are stressed on the ending (подаємо\u0301, подаєте\u0301, подаючи\u0301), so the stress is not fixed; see verb_paradigms.json."
     },
     {
       "id": "ukf-2955",
@@ -38388,7 +38398,7 @@
       "pos": "VERB",
       "lemma_features": {"aspect": "Imp"},
       "paradigm": "conjugable",
-      "status": "seed",
+      "status": "deprecated",
       "stressed": {"uppercase": "програвАти", "combining": "програва\u0301ти"},
       "stress_char_index": 7,
       "stress_syllable": 3,
@@ -38397,7 +38407,8 @@
         {"uppercase": "програЮ", "combining": "програю\u0301"},
         {"uppercase": "програЄш", "combining": "програє\u0301ш"},
         {"uppercase": "програвАла", "combining": "програва\u0301ла"}
-      ]
+      ],
+      "note": "1pl/2pl present and the converb are stressed on the ending (програємо\u0301, програєте\u0301, програючи\u0301), so the stress is not fixed; see verb_paradigms.json."
     },
     {
       "id": "ukf-2963",
@@ -38692,7 +38703,8 @@
         {"uppercase": "прогрАю", "combining": "програ\u0301ю"},
         {"uppercase": "прогрАєш", "combining": "програ\u0301єш"},
         {"uppercase": "прогрАла", "combining": "програ\u0301ла"}
-      ]
+      ],
+      "note": "Future forms (програ\u0301ю...) coincide with present forms of програвати (програю\u0301...); resolve the aspect first."
     },
     {
       "id": "ukf-2980",
@@ -38726,7 +38738,8 @@
         {"uppercase": "упізнАю", "combining": "упізна\u0301ю"},
         {"uppercase": "упізнАєш", "combining": "упізна\u0301єш"},
         {"uppercase": "упізнАла", "combining": "упізна\u0301ла"}
-      ]
+      ],
+      "note": "Future forms (упізна\u0301ю...) coincide with present forms of упізнавати (упізнаю\u0301...); resolve the aspect first."
     },
     {
       "id": "ukf-2982",
@@ -47932,7 +47945,8 @@
         {"uppercase": "вИзнаю", "combining": "ви\u0301знаю"},
         {"uppercase": "вИзнаєш", "combining": "ви\u0301знаєш"},
         {"uppercase": "вИзнала", "combining": "ви\u0301знала"}
-      ]
+      ],
+      "note": "Future forms (ви\u0301знаю...) coincide with present forms of визнавати (визнаю\u0301...); resolve the aspect first."
     },
     {
       "id": "ukf-3696",
@@ -54979,7 +54993,7 @@
       "pos": "VERB",
       "lemma_features": {"aspect": "Imp"},
       "paradigm": "conjugable",
-      "status": "seed",
+      "status": "deprecated",
       "stressed": {"uppercase": "вставАти", "combining": "встава\u0301ти"},
       "stress_char_index": 5,
       "stress_syllable": 2,
@@ -54988,7 +55002,8 @@
         {"uppercase": "встаЮ", "combining": "встаю\u0301"},
         {"uppercase": "встаЄш", "combining": "встає\u0301ш"},
         {"uppercase": "вставАла", "combining": "встава\u0301ла"}
-      ]
+      ],
+      "note": "1pl/2pl present and the converb are stressed on the ending (встаємо\u0301, встаєте\u0301, встаючи\u0301), so the stress is not fixed; see verb_paradigms.json."
     },
     {
       "id": "ukf-4256",
@@ -56793,6 +56808,1842 @@
       "stress_char_index": 2,
       "stress_syllable": 2,
       "syllable_count": 2
+    },
+    {
+      "id": "ukf-4385",
+      "lemma": "підходити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "підхОдити", "combining": "підхо\u0301дити"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "підхОджу", "combining": "підхо\u0301джу"},
+        {"uppercase": "підхОдиш", "combining": "підхо\u0301диш"},
+        {"uppercase": "підхОдимо", "combining": "підхо\u0301димо"},
+        {"uppercase": "підхОдила", "combining": "підхо\u0301дила"}
+      ]
+    },
+    {
+      "id": "ukf-4386",
+      "lemma": "вводити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "ввОдити", "combining": "вво\u0301дити"},
+      "stress_char_index": 2,
+      "stress_syllable": 1,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "ввОджу", "combining": "вво\u0301джу"},
+        {"uppercase": "ввОдиш", "combining": "вво\u0301диш"},
+        {"uppercase": "ввОдимо", "combining": "вво\u0301димо"},
+        {"uppercase": "ввОдила", "combining": "вво\u0301дила"}
+      ]
+    },
+    {
+      "id": "ukf-4387",
+      "lemma": "відводити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "відвОдити", "combining": "відво\u0301дити"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "відвОджу", "combining": "відво\u0301джу"},
+        {"uppercase": "відвОдиш", "combining": "відво\u0301диш"},
+        {"uppercase": "відвОдимо", "combining": "відво\u0301димо"},
+        {"uppercase": "відвОдила", "combining": "відво\u0301дила"}
+      ]
+    },
+    {
+      "id": "ukf-4388",
+      "lemma": "доводити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "довОдити", "combining": "дово\u0301дити"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "довОджу", "combining": "дово\u0301джу"},
+        {"uppercase": "довОдиш", "combining": "дово\u0301диш"},
+        {"uppercase": "довОдимо", "combining": "дово\u0301димо"},
+        {"uppercase": "довОдила", "combining": "дово\u0301дила"}
+      ]
+    },
+    {
+      "id": "ukf-4389",
+      "lemma": "заводити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "завОдити", "combining": "заво\u0301дити"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "завОджу", "combining": "заво\u0301джу"},
+        {"uppercase": "завОдиш", "combining": "заво\u0301диш"},
+        {"uppercase": "завОдимо", "combining": "заво\u0301димо"},
+        {"uppercase": "завОдила", "combining": "заво\u0301дила"}
+      ]
+    },
+    {
+      "id": "ukf-4390",
+      "lemma": "зводити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "звОдити", "combining": "зво\u0301дити"},
+      "stress_char_index": 2,
+      "stress_syllable": 1,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "звОджу", "combining": "зво\u0301джу"},
+        {"uppercase": "звОдиш", "combining": "зво\u0301диш"},
+        {"uppercase": "звОдимо", "combining": "зво\u0301димо"},
+        {"uppercase": "звОдила", "combining": "зво\u0301дила"}
+      ]
+    },
+    {
+      "id": "ukf-4391",
+      "lemma": "наводити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "навОдити", "combining": "наво\u0301дити"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "навОджу", "combining": "наво\u0301джу"},
+        {"uppercase": "навОдиш", "combining": "наво\u0301диш"},
+        {"uppercase": "навОдимо", "combining": "наво\u0301димо"},
+        {"uppercase": "навОдила", "combining": "наво\u0301дила"}
+      ]
+    },
+    {
+      "id": "ukf-4392",
+      "lemma": "підводити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "підвОдити", "combining": "підво\u0301дити"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "підвОджу", "combining": "підво\u0301джу"},
+        {"uppercase": "підвОдиш", "combining": "підво\u0301диш"},
+        {"uppercase": "підвОдимо", "combining": "підво\u0301димо"},
+        {"uppercase": "підвОдила", "combining": "підво\u0301дила"}
+      ]
+    },
+    {
+      "id": "ukf-4393",
+      "lemma": "приводити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "привОдити", "combining": "приво\u0301дити"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "привОджу", "combining": "приво\u0301джу"},
+        {"uppercase": "привОдиш", "combining": "приво\u0301диш"},
+        {"uppercase": "привОдимо", "combining": "приво\u0301димо"},
+        {"uppercase": "привОдила", "combining": "приво\u0301дила"}
+      ]
+    },
+    {
+      "id": "ukf-4394",
+      "lemma": "розводити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "розвОдити", "combining": "розво\u0301дити"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "розвОджу", "combining": "розво\u0301джу"},
+        {"uppercase": "розвОдиш", "combining": "розво\u0301диш"},
+        {"uppercase": "розвОдимо", "combining": "розво\u0301димо"},
+        {"uppercase": "розвОдила", "combining": "розво\u0301дила"}
+      ]
+    },
+    {
+      "id": "ukf-4395",
+      "lemma": "ввозити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "ввОзити", "combining": "вво\u0301зити"},
+      "stress_char_index": 2,
+      "stress_syllable": 1,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "ввОжу", "combining": "вво\u0301жу"},
+        {"uppercase": "ввОзиш", "combining": "вво\u0301зиш"},
+        {"uppercase": "ввОзимо", "combining": "вво\u0301зимо"},
+        {"uppercase": "ввОзила", "combining": "вво\u0301зила"}
+      ]
+    },
+    {
+      "id": "ukf-4396",
+      "lemma": "відвозити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "відвОзити", "combining": "відво\u0301зити"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "відвОжу", "combining": "відво\u0301жу"},
+        {"uppercase": "відвОзиш", "combining": "відво\u0301зиш"},
+        {"uppercase": "відвОзимо", "combining": "відво\u0301зимо"},
+        {"uppercase": "відвОзила", "combining": "відво\u0301зила"}
+      ]
+    },
+    {
+      "id": "ukf-4397",
+      "lemma": "підвозити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "підвОзити", "combining": "підво\u0301зити"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "підвОжу", "combining": "підво\u0301жу"},
+        {"uppercase": "підвОзиш", "combining": "підво\u0301зиш"},
+        {"uppercase": "підвОзимо", "combining": "підво\u0301зимо"},
+        {"uppercase": "підвОзила", "combining": "підво\u0301зила"}
+      ]
+    },
+    {
+      "id": "ukf-4398",
+      "lemma": "привозити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "привОзити", "combining": "приво\u0301зити"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "привОжу", "combining": "приво\u0301жу"},
+        {"uppercase": "привОзиш", "combining": "приво\u0301зиш"},
+        {"uppercase": "привОзимо", "combining": "приво\u0301зимо"},
+        {"uppercase": "привОзила", "combining": "приво\u0301зила"}
+      ]
+    },
+    {
+      "id": "ukf-4399",
+      "lemma": "вносити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "внОсити", "combining": "вно\u0301сити"},
+      "stress_char_index": 2,
+      "stress_syllable": 1,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "внОшу", "combining": "вно\u0301шу"},
+        {"uppercase": "внОсиш", "combining": "вно\u0301сиш"},
+        {"uppercase": "внОсимо", "combining": "вно\u0301симо"},
+        {"uppercase": "внОсила", "combining": "вно\u0301сила"}
+      ]
+    },
+    {
+      "id": "ukf-4400",
+      "lemma": "підносити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "піднОсити", "combining": "підно\u0301сити"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "піднОшу", "combining": "підно\u0301шу"},
+        {"uppercase": "піднОсиш", "combining": "підно\u0301сиш"},
+        {"uppercase": "піднОсимо", "combining": "підно\u0301симо"},
+        {"uppercase": "піднОсила", "combining": "підно\u0301сила"}
+      ]
+    },
+    {
+      "id": "ukf-4401",
+      "lemma": "приносити",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "принОсити", "combining": "прино\u0301сити"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "принОшу", "combining": "прино\u0301шу"},
+        {"uppercase": "принОсиш", "combining": "прино\u0301сиш"},
+        {"uppercase": "принОсимо", "combining": "прино\u0301симо"},
+        {"uppercase": "принОсила", "combining": "прино\u0301сила"}
+      ]
+    },
+    {
+      "id": "ukf-4402",
+      "lemma": "впускати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "впускАти", "combining": "впуска\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "впускАю", "combining": "впуска\u0301ю"},
+        {"uppercase": "впускАєш", "combining": "впуска\u0301єш"},
+        {"uppercase": "впускАємо", "combining": "впуска\u0301ємо"},
+        {"uppercase": "впускАла", "combining": "впуска\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4403",
+      "lemma": "спускати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "спускАти", "combining": "спуска\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "спускАю", "combining": "спуска\u0301ю"},
+        {"uppercase": "спускАєш", "combining": "спуска\u0301єш"},
+        {"uppercase": "спускАємо", "combining": "спуска\u0301ємо"},
+        {"uppercase": "спускАла", "combining": "спуска\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4404",
+      "lemma": "розпускати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "розпускАти", "combining": "розпуска\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "розпускАю", "combining": "розпуска\u0301ю"},
+        {"uppercase": "розпускАєш", "combining": "розпуска\u0301єш"},
+        {"uppercase": "розпускАємо", "combining": "розпуска\u0301ємо"},
+        {"uppercase": "розпускАла", "combining": "розпуска\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4405",
+      "lemma": "підпускати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "підпускАти", "combining": "підпуска\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "підпускАю", "combining": "підпуска\u0301ю"},
+        {"uppercase": "підпускАєш", "combining": "підпуска\u0301єш"},
+        {"uppercase": "підпускАємо", "combining": "підпуска\u0301ємо"},
+        {"uppercase": "підпускАла", "combining": "підпуска\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4406",
+      "lemma": "випускати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "випускАти", "combining": "випуска\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "випускАю", "combining": "випуска\u0301ю"},
+        {"uppercase": "випускАєш", "combining": "випуска\u0301єш"},
+        {"uppercase": "випускАємо", "combining": "випуска\u0301ємо"},
+        {"uppercase": "випускАла", "combining": "випуска\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4407",
+      "lemma": "вкривати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "вкривАти", "combining": "вкрива\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "вкривАю", "combining": "вкрива\u0301ю"},
+        {"uppercase": "вкривАєш", "combining": "вкрива\u0301єш"},
+        {"uppercase": "вкривАємо", "combining": "вкрива\u0301ємо"},
+        {"uppercase": "вкривАла", "combining": "вкрива\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4408",
+      "lemma": "накривати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "накривАти", "combining": "накрива\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "накривАю", "combining": "накрива\u0301ю"},
+        {"uppercase": "накривАєш", "combining": "накрива\u0301єш"},
+        {"uppercase": "накривАємо", "combining": "накрива\u0301ємо"},
+        {"uppercase": "накривАла", "combining": "накрива\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4409",
+      "lemma": "перекривати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "перекривАти", "combining": "перекрива\u0301ти"},
+      "stress_char_index": 8,
+      "stress_syllable": 4,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "перекривАю", "combining": "перекрива\u0301ю"},
+        {"uppercase": "перекривАєш", "combining": "перекрива\u0301єш"},
+        {"uppercase": "перекривАємо", "combining": "перекрива\u0301ємо"},
+        {"uppercase": "перекривАла", "combining": "перекрива\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4410",
+      "lemma": "прикривати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "прикривАти", "combining": "прикрива\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "прикривАю", "combining": "прикрива\u0301ю"},
+        {"uppercase": "прикривАєш", "combining": "прикрива\u0301єш"},
+        {"uppercase": "прикривАємо", "combining": "прикрива\u0301ємо"},
+        {"uppercase": "прикривАла", "combining": "прикрива\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4411",
+      "lemma": "розкривати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "розкривАти", "combining": "розкрива\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "розкривАю", "combining": "розкрива\u0301ю"},
+        {"uppercase": "розкривАєш", "combining": "розкрива\u0301єш"},
+        {"uppercase": "розкривАємо", "combining": "розкрива\u0301ємо"},
+        {"uppercase": "розкривАла", "combining": "розкрива\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4412",
+      "lemma": "покривати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "покривАти", "combining": "покрива\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "покривАю", "combining": "покрива\u0301ю"},
+        {"uppercase": "покривАєш", "combining": "покрива\u0301єш"},
+        {"uppercase": "покривАємо", "combining": "покрива\u0301ємо"},
+        {"uppercase": "покривАла", "combining": "покрива\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4413",
+      "lemma": "укривати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "укривАти", "combining": "укрива\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "укривАю", "combining": "укрива\u0301ю"},
+        {"uppercase": "укривАєш", "combining": "укрива\u0301єш"},
+        {"uppercase": "укривАємо", "combining": "укрива\u0301ємо"},
+        {"uppercase": "укривАла", "combining": "укрива\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4414",
+      "lemma": "перебирати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "перебирАти", "combining": "перебира\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 4,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "перебирАю", "combining": "перебира\u0301ю"},
+        {"uppercase": "перебирАєш", "combining": "перебира\u0301єш"},
+        {"uppercase": "перебирАємо", "combining": "перебира\u0301ємо"},
+        {"uppercase": "перебирАла", "combining": "перебира\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4415",
+      "lemma": "добирати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "добирАти", "combining": "добира\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "добирАю", "combining": "добира\u0301ю"},
+        {"uppercase": "добирАєш", "combining": "добира\u0301єш"},
+        {"uppercase": "добирАємо", "combining": "добира\u0301ємо"},
+        {"uppercase": "добирАла", "combining": "добира\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4416",
+      "lemma": "набирати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "набирАти", "combining": "набира\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "набирАю", "combining": "набира\u0301ю"},
+        {"uppercase": "набирАєш", "combining": "набира\u0301єш"},
+        {"uppercase": "набирАємо", "combining": "набира\u0301ємо"},
+        {"uppercase": "набирАла", "combining": "набира\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4417",
+      "lemma": "вставляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "вставлЯти", "combining": "вставля\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "вставлЯю", "combining": "вставля\u0301ю"},
+        {"uppercase": "вставлЯєш", "combining": "вставля\u0301єш"},
+        {"uppercase": "вставлЯємо", "combining": "вставля\u0301ємо"},
+        {"uppercase": "вставлЯла", "combining": "вставля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4418",
+      "lemma": "виставляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "виставлЯти", "combining": "виставля\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "виставлЯю", "combining": "виставля\u0301ю"},
+        {"uppercase": "виставлЯєш", "combining": "виставля\u0301єш"},
+        {"uppercase": "виставлЯємо", "combining": "виставля\u0301ємо"},
+        {"uppercase": "виставлЯла", "combining": "виставля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4419",
+      "lemma": "заставляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "заставлЯти", "combining": "заставля\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "заставлЯю", "combining": "заставля\u0301ю"},
+        {"uppercase": "заставлЯєш", "combining": "заставля\u0301єш"},
+        {"uppercase": "заставлЯємо", "combining": "заставля\u0301ємо"},
+        {"uppercase": "заставлЯла", "combining": "заставля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4420",
+      "lemma": "наставляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "наставлЯти", "combining": "наставля\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "наставлЯю", "combining": "наставля\u0301ю"},
+        {"uppercase": "наставлЯєш", "combining": "наставля\u0301єш"},
+        {"uppercase": "наставлЯємо", "combining": "наставля\u0301ємо"},
+        {"uppercase": "наставлЯла", "combining": "наставля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4421",
+      "lemma": "переставляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "переставлЯти", "combining": "переставля\u0301ти"},
+      "stress_char_index": 9,
+      "stress_syllable": 4,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "переставлЯю", "combining": "переставля\u0301ю"},
+        {"uppercase": "переставлЯєш", "combining": "переставля\u0301єш"},
+        {"uppercase": "переставлЯємо", "combining": "переставля\u0301ємо"},
+        {"uppercase": "переставлЯла", "combining": "переставля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4422",
+      "lemma": "підставляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "підставлЯти", "combining": "підставля\u0301ти"},
+      "stress_char_index": 8,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "підставлЯю", "combining": "підставля\u0301ю"},
+        {"uppercase": "підставлЯєш", "combining": "підставля\u0301єш"},
+        {"uppercase": "підставлЯємо", "combining": "підставля\u0301ємо"},
+        {"uppercase": "підставлЯла", "combining": "підставля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4423",
+      "lemma": "представляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "представлЯти", "combining": "представля\u0301ти"},
+      "stress_char_index": 9,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "представлЯю", "combining": "представля\u0301ю"},
+        {"uppercase": "представлЯєш", "combining": "представля\u0301єш"},
+        {"uppercase": "представлЯємо", "combining": "представля\u0301ємо"},
+        {"uppercase": "представлЯла", "combining": "представля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4424",
+      "lemma": "доставляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "доставлЯти", "combining": "доставля\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "доставлЯю", "combining": "доставля\u0301ю"},
+        {"uppercase": "доставлЯєш", "combining": "доставля\u0301єш"},
+        {"uppercase": "доставлЯємо", "combining": "доставля\u0301ємо"},
+        {"uppercase": "доставлЯла", "combining": "доставля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4425",
+      "lemma": "відставляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "відставлЯти", "combining": "відставля\u0301ти"},
+      "stress_char_index": 8,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "відставлЯю", "combining": "відставля\u0301ю"},
+        {"uppercase": "відставлЯєш", "combining": "відставля\u0301єш"},
+        {"uppercase": "відставлЯємо", "combining": "відставля\u0301ємо"},
+        {"uppercase": "відставлЯла", "combining": "відставля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4426",
+      "lemma": "промовляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "промовлЯти", "combining": "промовля\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "промовлЯю", "combining": "промовля\u0301ю"},
+        {"uppercase": "промовлЯєш", "combining": "промовля\u0301єш"},
+        {"uppercase": "промовлЯємо", "combining": "промовля\u0301ємо"},
+        {"uppercase": "промовлЯла", "combining": "промовля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4427",
+      "lemma": "переглядати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "переглядАти", "combining": "перегляда\u0301ти"},
+      "stress_char_index": 8,
+      "stress_syllable": 4,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "переглядАю", "combining": "перегляда\u0301ю"},
+        {"uppercase": "переглядАєш", "combining": "перегляда\u0301єш"},
+        {"uppercase": "переглядАємо", "combining": "перегляда\u0301ємо"},
+        {"uppercase": "переглядАла", "combining": "перегляда\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4428",
+      "lemma": "заглядати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "заглядАти", "combining": "загляда\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "заглядАю", "combining": "загляда\u0301ю"},
+        {"uppercase": "заглядАєш", "combining": "загляда\u0301єш"},
+        {"uppercase": "заглядАємо", "combining": "загляда\u0301ємо"},
+        {"uppercase": "заглядАла", "combining": "загляда\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4429",
+      "lemma": "підглядати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "підглядАти", "combining": "підгляда\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "підглядАю", "combining": "підгляда\u0301ю"},
+        {"uppercase": "підглядАєш", "combining": "підгляда\u0301єш"},
+        {"uppercase": "підглядАємо", "combining": "підгляда\u0301ємо"},
+        {"uppercase": "підглядАла", "combining": "підгляда\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4430",
+      "lemma": "відлітати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "відлітАти", "combining": "відліта\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "відлітАю", "combining": "відліта\u0301ю"},
+        {"uppercase": "відлітАєш", "combining": "відліта\u0301єш"},
+        {"uppercase": "відлітАємо", "combining": "відліта\u0301ємо"},
+        {"uppercase": "відлітАла", "combining": "відліта\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4431",
+      "lemma": "залітати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "залітАти", "combining": "заліта\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "залітАю", "combining": "заліта\u0301ю"},
+        {"uppercase": "залітАєш", "combining": "заліта\u0301єш"},
+        {"uppercase": "залітАємо", "combining": "заліта\u0301ємо"},
+        {"uppercase": "залітАла", "combining": "заліта\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4432",
+      "lemma": "пролітати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "пролітАти", "combining": "проліта\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "пролітАю", "combining": "проліта\u0301ю"},
+        {"uppercase": "пролітАєш", "combining": "проліта\u0301єш"},
+        {"uppercase": "пролітАємо", "combining": "проліта\u0301ємо"},
+        {"uppercase": "пролітАла", "combining": "проліта\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4433",
+      "lemma": "перелітати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "перелітАти", "combining": "переліта\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 4,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "перелітАю", "combining": "переліта\u0301ю"},
+        {"uppercase": "перелітАєш", "combining": "переліта\u0301єш"},
+        {"uppercase": "перелітАємо", "combining": "переліта\u0301ємо"},
+        {"uppercase": "перелітАла", "combining": "переліта\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4434",
+      "lemma": "налітати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "налітАти", "combining": "наліта\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "налітАю", "combining": "наліта\u0301ю"},
+        {"uppercase": "налітАєш", "combining": "наліта\u0301єш"},
+        {"uppercase": "налітАємо", "combining": "наліта\u0301ємо"},
+        {"uppercase": "налітАла", "combining": "наліта\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4435",
+      "lemma": "злітати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "злітАти", "combining": "зліта\u0301ти"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "злітАю", "combining": "зліта\u0301ю"},
+        {"uppercase": "злітАєш", "combining": "зліта\u0301єш"},
+        {"uppercase": "злітАємо", "combining": "зліта\u0301ємо"},
+        {"uppercase": "злітАла", "combining": "зліта\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4436",
+      "lemma": "прибігати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "прибігАти", "combining": "прибіга\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "прибігАю", "combining": "прибіга\u0301ю"},
+        {"uppercase": "прибігАєш", "combining": "прибіга\u0301єш"},
+        {"uppercase": "прибігАємо", "combining": "прибіга\u0301ємо"},
+        {"uppercase": "прибігАла", "combining": "прибіга\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4437",
+      "lemma": "підбігати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "підбігАти", "combining": "підбіга\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "підбігАю", "combining": "підбіга\u0301ю"},
+        {"uppercase": "підбігАєш", "combining": "підбіга\u0301єш"},
+        {"uppercase": "підбігАємо", "combining": "підбіга\u0301ємо"},
+        {"uppercase": "підбігАла", "combining": "підбіга\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4438",
+      "lemma": "від'їжджати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "від'їжджАти", "combining": "від'їжджа\u0301ти"},
+      "stress_char_index": 8,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "від'їжджАю", "combining": "від'їжджа\u0301ю"},
+        {"uppercase": "від'їжджАєш", "combining": "від'їжджа\u0301єш"},
+        {"uppercase": "від'їжджАємо", "combining": "від'їжджа\u0301ємо"},
+        {"uppercase": "від'їжджАла", "combining": "від'їжджа\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4439",
+      "lemma": "виїжджати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "виїжджАти", "combining": "виїжджа\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "виїжджАю", "combining": "виїжджа\u0301ю"},
+        {"uppercase": "виїжджАєш", "combining": "виїжджа\u0301єш"},
+        {"uppercase": "виїжджАємо", "combining": "виїжджа\u0301ємо"},
+        {"uppercase": "виїжджАла", "combining": "виїжджа\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4440",
+      "lemma": "заїжджати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "заїжджАти", "combining": "заїжджа\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "заїжджАю", "combining": "заїжджа\u0301ю"},
+        {"uppercase": "заїжджАєш", "combining": "заїжджа\u0301єш"},
+        {"uppercase": "заїжджАємо", "combining": "заїжджа\u0301ємо"},
+        {"uppercase": "заїжджАла", "combining": "заїжджа\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4441",
+      "lemma": "під'їжджати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "під'їжджАти", "combining": "під'їжджа\u0301ти"},
+      "stress_char_index": 8,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "під'їжджАю", "combining": "під'їжджа\u0301ю"},
+        {"uppercase": "під'їжджАєш", "combining": "під'їжджа\u0301єш"},
+        {"uppercase": "під'їжджАємо", "combining": "під'їжджа\u0301ємо"},
+        {"uppercase": "під'їжджАла", "combining": "під'їжджа\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4442",
+      "lemma": "проїжджати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "проїжджАти", "combining": "проїжджа\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "проїжджАю", "combining": "проїжджа\u0301ю"},
+        {"uppercase": "проїжджАєш", "combining": "проїжджа\u0301єш"},
+        {"uppercase": "проїжджАємо", "combining": "проїжджа\u0301ємо"},
+        {"uppercase": "проїжджАла", "combining": "проїжджа\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4443",
+      "lemma": "доїжджати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "доїжджАти", "combining": "доїжджа\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "доїжджАю", "combining": "доїжджа\u0301ю"},
+        {"uppercase": "доїжджАєш", "combining": "доїжджа\u0301єш"},
+        {"uppercase": "доїжджАємо", "combining": "доїжджа\u0301ємо"},
+        {"uppercase": "доїжджАла", "combining": "доїжджа\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4444",
+      "lemma": "з'їжджати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "з'їжджАти", "combining": "з'їжджа\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "з'їжджАю", "combining": "з'їжджа\u0301ю"},
+        {"uppercase": "з'їжджАєш", "combining": "з'їжджа\u0301єш"},
+        {"uppercase": "з'їжджАємо", "combining": "з'їжджа\u0301ємо"},
+        {"uppercase": "з'їжджАла", "combining": "з'їжджа\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4445",
+      "lemma": "переробляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "перероблЯти", "combining": "переробля\u0301ти"},
+      "stress_char_index": 8,
+      "stress_syllable": 4,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "перероблЯю", "combining": "переробля\u0301ю"},
+        {"uppercase": "перероблЯєш", "combining": "переробля\u0301єш"},
+        {"uppercase": "перероблЯємо", "combining": "переробля\u0301ємо"},
+        {"uppercase": "перероблЯла", "combining": "переробля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4446",
+      "lemma": "підробляти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "підроблЯти", "combining": "підробля\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "підроблЯю", "combining": "підробля\u0301ю"},
+        {"uppercase": "підроблЯєш", "combining": "підробля\u0301єш"},
+        {"uppercase": "підроблЯємо", "combining": "підробля\u0301ємо"},
+        {"uppercase": "підроблЯла", "combining": "підробля\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4447",
+      "lemma": "відділяти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "відділЯти", "combining": "відділя\u0301ти"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "відділЯю", "combining": "відділя\u0301ю"},
+        {"uppercase": "відділЯєш", "combining": "відділя\u0301єш"},
+        {"uppercase": "відділЯємо", "combining": "відділя\u0301ємо"},
+        {"uppercase": "відділЯла", "combining": "відділя\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4448",
+      "lemma": "виділяти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "виділЯти", "combining": "виділя\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "виділЯю", "combining": "виділя\u0301ю"},
+        {"uppercase": "виділЯєш", "combining": "виділя\u0301єш"},
+        {"uppercase": "виділЯємо", "combining": "виділя\u0301ємо"},
+        {"uppercase": "виділЯла", "combining": "виділя\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4449",
+      "lemma": "наділяти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "наділЯти", "combining": "наділя\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "наділЯю", "combining": "наділя\u0301ю"},
+        {"uppercase": "наділЯєш", "combining": "наділя\u0301єш"},
+        {"uppercase": "наділЯємо", "combining": "наділя\u0301ємо"},
+        {"uppercase": "наділЯла", "combining": "наділя\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4450",
+      "lemma": "поділяти",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "поділЯти", "combining": "поділя\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "поділЯю", "combining": "поділя\u0301ю"},
+        {"uppercase": "поділЯєш", "combining": "поділя\u0301єш"},
+        {"uppercase": "поділЯємо", "combining": "поділя\u0301ємо"},
+        {"uppercase": "поділЯла", "combining": "поділя\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4451",
+      "lemma": "привчати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "привчАти", "combining": "привча\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 2,
+      "syllable_count": 3,
+      "sample_forms": [
+        {"uppercase": "привчАю", "combining": "привча\u0301ю"},
+        {"uppercase": "привчАєш", "combining": "привча\u0301єш"},
+        {"uppercase": "привчАємо", "combining": "привча\u0301ємо"},
+        {"uppercase": "привчАла", "combining": "привча\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4452",
+      "lemma": "погашати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "погашАти", "combining": "погаша\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "погашАю", "combining": "погаша\u0301ю"},
+        {"uppercase": "погашАєш", "combining": "погаша\u0301єш"},
+        {"uppercase": "погашАємо", "combining": "погаша\u0301ємо"},
+        {"uppercase": "погашАла", "combining": "погаша\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4453",
+      "lemma": "перевертати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "перевертАти", "combining": "переверта\u0301ти"},
+      "stress_char_index": 8,
+      "stress_syllable": 4,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "перевертАю", "combining": "переверта\u0301ю"},
+        {"uppercase": "перевертАєш", "combining": "переверта\u0301єш"},
+        {"uppercase": "перевертАємо", "combining": "переверта\u0301ємо"},
+        {"uppercase": "перевертАла", "combining": "переверта\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4454",
+      "lemma": "відвертати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "відвертАти", "combining": "відверта\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "відвертАю", "combining": "відверта\u0301ю"},
+        {"uppercase": "відвертАєш", "combining": "відверта\u0301єш"},
+        {"uppercase": "відвертАємо", "combining": "відверта\u0301ємо"},
+        {"uppercase": "відвертАла", "combining": "відверта\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4455",
+      "lemma": "розвертати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "розвертАти", "combining": "розверта\u0301ти"},
+      "stress_char_index": 7,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "розвертАю", "combining": "розверта\u0301ю"},
+        {"uppercase": "розвертАєш", "combining": "розверта\u0301єш"},
+        {"uppercase": "розвертАємо", "combining": "розверта\u0301ємо"},
+        {"uppercase": "розвертАла", "combining": "розверта\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4456",
+      "lemma": "обертати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "обертАти", "combining": "оберта\u0301ти"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "обертАю", "combining": "оберта\u0301ю"},
+        {"uppercase": "обертАєш", "combining": "оберта\u0301єш"},
+        {"uppercase": "обертАємо", "combining": "оберта\u0301ємо"},
+        {"uppercase": "обертАла", "combining": "оберта\u0301ла"}
+      ]
+    },
+    {
+      "id": "ukf-4457",
+      "lemma": "переписувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "перепИсувати", "combining": "перепи\u0301сувати"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 6,
+      "sample_forms": [
+        {"uppercase": "перепИсую", "combining": "перепи\u0301сую"},
+        {"uppercase": "перепИсуєш", "combining": "перепи\u0301суєш"},
+        {"uppercase": "перепИсуємо", "combining": "перепи\u0301суємо"},
+        {"uppercase": "перепИсувала", "combining": "перепи\u0301сувала"}
+      ]
+    },
+    {
+      "id": "ukf-4458",
+      "lemma": "виписувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "випИсувати", "combining": "випи\u0301сувати"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "випИсую", "combining": "випи\u0301сую"},
+        {"uppercase": "випИсуєш", "combining": "випи\u0301суєш"},
+        {"uppercase": "випИсуємо", "combining": "випи\u0301суємо"},
+        {"uppercase": "випИсувала", "combining": "випи\u0301сувала"}
+      ]
+    },
+    {
+      "id": "ukf-4459",
+      "lemma": "прописувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "пропИсувати", "combining": "пропи\u0301сувати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "пропИсую", "combining": "пропи\u0301сую"},
+        {"uppercase": "пропИсуєш", "combining": "пропи\u0301суєш"},
+        {"uppercase": "пропИсуємо", "combining": "пропи\u0301суємо"},
+        {"uppercase": "пропИсувала", "combining": "пропи\u0301сувала"}
+      ]
+    },
+    {
+      "id": "ukf-4460",
+      "lemma": "вписувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "впИсувати", "combining": "впи\u0301сувати"},
+      "stress_char_index": 2,
+      "stress_syllable": 1,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "впИсую", "combining": "впи\u0301сую"},
+        {"uppercase": "впИсуєш", "combining": "впи\u0301суєш"},
+        {"uppercase": "впИсуємо", "combining": "впи\u0301суємо"},
+        {"uppercase": "впИсувала", "combining": "впи\u0301сувала"}
+      ]
+    },
+    {
+      "id": "ukf-4461",
+      "lemma": "дописувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "допИсувати", "combining": "допи\u0301сувати"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "допИсую", "combining": "допи\u0301сую"},
+        {"uppercase": "допИсуєш", "combining": "допи\u0301суєш"},
+        {"uppercase": "допИсуємо", "combining": "допи\u0301суємо"},
+        {"uppercase": "допИсувала", "combining": "допи\u0301сувала"}
+      ]
+    },
+    {
+      "id": "ukf-4462",
+      "lemma": "розписувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "розпИсувати", "combining": "розпи\u0301сувати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "розпИсую", "combining": "розпи\u0301сую"},
+        {"uppercase": "розпИсуєш", "combining": "розпи\u0301суєш"},
+        {"uppercase": "розпИсуємо", "combining": "розпи\u0301суємо"},
+        {"uppercase": "розпИсувала", "combining": "розпи\u0301сувала"}
+      ]
+    },
+    {
+      "id": "ukf-4463",
+      "lemma": "списувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "спИсувати", "combining": "спи\u0301сувати"},
+      "stress_char_index": 2,
+      "stress_syllable": 1,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "спИсую", "combining": "спи\u0301сую"},
+        {"uppercase": "спИсуєш", "combining": "спи\u0301суєш"},
+        {"uppercase": "спИсуємо", "combining": "спи\u0301суємо"},
+        {"uppercase": "спИсувала", "combining": "спи\u0301сувала"}
+      ]
+    },
+    {
+      "id": "ukf-4464",
+      "lemma": "розказувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "розкАзувати", "combining": "розка\u0301зувати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "розкАзую", "combining": "розка\u0301зую"},
+        {"uppercase": "розкАзуєш", "combining": "розка\u0301зуєш"},
+        {"uppercase": "розкАзуємо", "combining": "розка\u0301зуємо"},
+        {"uppercase": "розкАзувала", "combining": "розка\u0301зувала"}
+      ]
+    },
+    {
+      "id": "ukf-4465",
+      "lemma": "наказувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "накАзувати", "combining": "нака\u0301зувати"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "накАзую", "combining": "нака\u0301зую"},
+        {"uppercase": "накАзуєш", "combining": "нака\u0301зуєш"},
+        {"uppercase": "накАзуємо", "combining": "нака\u0301зуємо"},
+        {"uppercase": "накАзувала", "combining": "нака\u0301зувала"}
+      ]
+    },
+    {
+      "id": "ukf-4466",
+      "lemma": "вказувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "вкАзувати", "combining": "вка\u0301зувати"},
+      "stress_char_index": 2,
+      "stress_syllable": 1,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "вкАзую", "combining": "вка\u0301зую"},
+        {"uppercase": "вкАзуєш", "combining": "вка\u0301зуєш"},
+        {"uppercase": "вкАзуємо", "combining": "вка\u0301зуємо"},
+        {"uppercase": "вкАзувала", "combining": "вка\u0301зувала"}
+      ]
+    },
+    {
+      "id": "ukf-4467",
+      "lemma": "зав'язувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "зав'Язувати", "combining": "зав'я\u0301зувати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "зав'Язую", "combining": "зав'я\u0301зую"},
+        {"uppercase": "зав'Язуєш", "combining": "зав'я\u0301зуєш"},
+        {"uppercase": "зав'Язуємо", "combining": "зав'я\u0301зуємо"},
+        {"uppercase": "зав'Язувала", "combining": "зав'я\u0301зувала"}
+      ]
+    },
+    {
+      "id": "ukf-4468",
+      "lemma": "прив'язувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "прив'Язувати", "combining": "прив'я\u0301зувати"},
+      "stress_char_index": 5,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "прив'Язую", "combining": "прив'я\u0301зую"},
+        {"uppercase": "прив'Язуєш", "combining": "прив'я\u0301зуєш"},
+        {"uppercase": "прив'Язуємо", "combining": "прив'я\u0301зуємо"},
+        {"uppercase": "прив'Язувала", "combining": "прив'я\u0301зувала"}
+      ]
+    },
+    {
+      "id": "ukf-4469",
+      "lemma": "розв'язувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "розв'Язувати", "combining": "розв'я\u0301зувати"},
+      "stress_char_index": 5,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "розв'Язую", "combining": "розв'я\u0301зую"},
+        {"uppercase": "розв'Язуєш", "combining": "розв'я\u0301зуєш"},
+        {"uppercase": "розв'Язуємо", "combining": "розв'я\u0301зуємо"},
+        {"uppercase": "розв'Язувала", "combining": "розв'я\u0301зувала"}
+      ]
+    },
+    {
+      "id": "ukf-4470",
+      "lemma": "пов'язувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "пов'Язувати", "combining": "пов'я\u0301зувати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "пов'Язую", "combining": "пов'я\u0301зую"},
+        {"uppercase": "пов'Язуєш", "combining": "пов'я\u0301зуєш"},
+        {"uppercase": "пов'Язуємо", "combining": "пов'я\u0301зуємо"},
+        {"uppercase": "пов'Язувала", "combining": "пов'я\u0301зувала"}
+      ]
+    },
+    {
+      "id": "ukf-4471",
+      "lemma": "зв'язувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "зв'Язувати", "combining": "зв'я\u0301зувати"},
+      "stress_char_index": 3,
+      "stress_syllable": 1,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "зв'Язую", "combining": "зв'я\u0301зую"},
+        {"uppercase": "зв'Язуєш", "combining": "зв'я\u0301зуєш"},
+        {"uppercase": "зв'Язуємо", "combining": "зв'я\u0301зуємо"},
+        {"uppercase": "зв'Язувала", "combining": "зв'я\u0301зувала"}
+      ]
+    },
+    {
+      "id": "ukf-4472",
+      "lemma": "перев'язувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "перев'Язувати", "combining": "перев'я\u0301зувати"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 6,
+      "sample_forms": [
+        {"uppercase": "перев'Язую", "combining": "перев'я\u0301зую"},
+        {"uppercase": "перев'Язуєш", "combining": "перев'я\u0301зуєш"},
+        {"uppercase": "перев'Язуємо", "combining": "перев'я\u0301зуємо"},
+        {"uppercase": "перев'Язувала", "combining": "перев'я\u0301зувала"}
+      ]
+    },
+    {
+      "id": "ukf-4473",
+      "lemma": "приєднувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "приЄднувати", "combining": "приє\u0301днувати"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "приЄдную", "combining": "приє\u0301дную"},
+        {"uppercase": "приЄднуєш", "combining": "приє\u0301днуєш"},
+        {"uppercase": "приЄднуємо", "combining": "приє\u0301днуємо"},
+        {"uppercase": "приЄднувала", "combining": "приє\u0301днувала"}
+      ]
+    },
+    {
+      "id": "ukf-4474",
+      "lemma": "з'єднувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "з'Єднувати", "combining": "з'є\u0301днувати"},
+      "stress_char_index": 2,
+      "stress_syllable": 1,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "з'Єдную", "combining": "з'є\u0301дную"},
+        {"uppercase": "з'Єднуєш", "combining": "з'є\u0301днуєш"},
+        {"uppercase": "з'Єднуємо", "combining": "з'є\u0301днуємо"},
+        {"uppercase": "з'Єднувала", "combining": "з'є\u0301днувала"}
+      ]
+    },
+    {
+      "id": "ukf-4475",
+      "lemma": "роз'єднувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "роз'Єднувати", "combining": "роз'є\u0301днувати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "роз'Єдную", "combining": "роз'є\u0301дную"},
+        {"uppercase": "роз'Єднуєш", "combining": "роз'є\u0301днуєш"},
+        {"uppercase": "роз'Єднуємо", "combining": "роз'є\u0301днуємо"},
+        {"uppercase": "роз'Єднувала", "combining": "роз'є\u0301днувала"}
+      ]
+    },
+    {
+      "id": "ukf-4476",
+      "lemma": "виплачувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "виплАчувати", "combining": "випла\u0301чувати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "виплАчую", "combining": "випла\u0301чую"},
+        {"uppercase": "виплАчуєш", "combining": "випла\u0301чуєш"},
+        {"uppercase": "виплАчуємо", "combining": "випла\u0301чуємо"},
+        {"uppercase": "виплАчувала", "combining": "випла\u0301чувала"}
+      ]
+    },
+    {
+      "id": "ukf-4477",
+      "lemma": "сплачувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "сплАчувати", "combining": "спла\u0301чувати"},
+      "stress_char_index": 3,
+      "stress_syllable": 1,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "сплАчую", "combining": "спла\u0301чую"},
+        {"uppercase": "сплАчуєш", "combining": "спла\u0301чуєш"},
+        {"uppercase": "сплАчуємо", "combining": "спла\u0301чуємо"},
+        {"uppercase": "сплАчувала", "combining": "спла\u0301чувала"}
+      ]
+    },
+    {
+      "id": "ukf-4478",
+      "lemma": "доплачувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "доплАчувати", "combining": "допла\u0301чувати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "доплАчую", "combining": "допла\u0301чую"},
+        {"uppercase": "доплАчуєш", "combining": "допла\u0301чуєш"},
+        {"uppercase": "доплАчуємо", "combining": "допла\u0301чуємо"},
+        {"uppercase": "доплАчувала", "combining": "допла\u0301чувала"}
+      ]
+    },
+    {
+      "id": "ukf-4479",
+      "lemma": "переплачувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "переплАчувати", "combining": "перепла\u0301чувати"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 6,
+      "sample_forms": [
+        {"uppercase": "переплАчую", "combining": "перепла\u0301чую"},
+        {"uppercase": "переплАчуєш", "combining": "перепла\u0301чуєш"},
+        {"uppercase": "переплАчуємо", "combining": "перепла\u0301чуємо"},
+        {"uppercase": "переплАчувала", "combining": "перепла\u0301чувала"}
+      ]
+    },
+    {
+      "id": "ukf-4480",
+      "lemma": "перепрошувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "перепрОшувати", "combining": "перепро\u0301шувати"},
+      "stress_char_index": 6,
+      "stress_syllable": 3,
+      "syllable_count": 6,
+      "sample_forms": [
+        {"uppercase": "перепрОшую", "combining": "перепро\u0301шую"},
+        {"uppercase": "перепрОшуєш", "combining": "перепро\u0301шуєш"},
+        {"uppercase": "перепрОшуємо", "combining": "перепро\u0301шуємо"},
+        {"uppercase": "перепрОшувала", "combining": "перепро\u0301шувала"}
+      ]
+    },
+    {
+      "id": "ukf-4481",
+      "lemma": "висаджувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "висАджувати", "combining": "виса\u0301джувати"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "висАджую", "combining": "виса\u0301джую"},
+        {"uppercase": "висАджуєш", "combining": "виса\u0301джуєш"},
+        {"uppercase": "висАджуємо", "combining": "виса\u0301джуємо"},
+        {"uppercase": "висАджувала", "combining": "виса\u0301джувала"}
+      ]
+    },
+    {
+      "id": "ukf-4482",
+      "lemma": "пересаджувати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "пересАджувати", "combining": "переса\u0301джувати"},
+      "stress_char_index": 5,
+      "stress_syllable": 3,
+      "syllable_count": 6,
+      "sample_forms": [
+        {"uppercase": "пересАджую", "combining": "переса\u0301джую"},
+        {"uppercase": "пересАджуєш", "combining": "переса\u0301джуєш"},
+        {"uppercase": "пересАджуємо", "combining": "переса\u0301джуємо"},
+        {"uppercase": "пересАджувала", "combining": "переса\u0301джувала"}
+      ]
+    },
+    {
+      "id": "ukf-4483",
+      "lemma": "спалювати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "спАлювати", "combining": "спа\u0301лювати"},
+      "stress_char_index": 2,
+      "stress_syllable": 1,
+      "syllable_count": 4,
+      "sample_forms": [
+        {"uppercase": "спАлюю", "combining": "спа\u0301люю"},
+        {"uppercase": "спАлюєш", "combining": "спа\u0301люєш"},
+        {"uppercase": "спАлюємо", "combining": "спа\u0301люємо"},
+        {"uppercase": "спАлювала", "combining": "спа\u0301лювала"}
+      ]
+    },
+    {
+      "id": "ukf-4484",
+      "lemma": "підпалювати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "підпАлювати", "combining": "підпа\u0301лювати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "підпАлюю", "combining": "підпа\u0301люю"},
+        {"uppercase": "підпАлюєш", "combining": "підпа\u0301люєш"},
+        {"uppercase": "підпАлюємо", "combining": "підпа\u0301люємо"},
+        {"uppercase": "підпАлювала", "combining": "підпа\u0301лювала"}
+      ]
+    },
+    {
+      "id": "ukf-4485",
+      "lemma": "висвітлювати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "висвІтлювати", "combining": "висві\u0301тлювати"},
+      "stress_char_index": 4,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "висвІтлюю", "combining": "висві\u0301тлюю"},
+        {"uppercase": "висвІтлюєш", "combining": "висві\u0301тлюєш"},
+        {"uppercase": "висвІтлюємо", "combining": "висві\u0301тлюємо"},
+        {"uppercase": "висвІтлювала", "combining": "висві\u0301тлювала"}
+      ]
+    },
+    {
+      "id": "ukf-4486",
+      "lemma": "освітлювати",
+      "pos": "VERB",
+      "lemma_features": {"aspect": "Imp"},
+      "paradigm": "conjugable",
+      "status": "seed",
+      "stressed": {"uppercase": "освІтлювати", "combining": "осві\u0301тлювати"},
+      "stress_char_index": 3,
+      "stress_syllable": 2,
+      "syllable_count": 5,
+      "sample_forms": [
+        {"uppercase": "освІтлюю", "combining": "осві\u0301тлюю"},
+        {"uppercase": "освІтлюєш", "combining": "осві\u0301тлюєш"},
+        {"uppercase": "освІтлюємо", "combining": "осві\u0301тлюємо"},
+        {"uppercase": "освІтлювала", "combining": "осві\u0301тлювала"}
+      ]
     }
   ]
 }
